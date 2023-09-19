@@ -1,0 +1,15 @@
+.skills{
+    display: flex;
+    justify-content: center;
+}
+
+.skill{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 400px;
+    height: 500px;
+    border-radius: 90px;
+    background-color: teal;
+
+}

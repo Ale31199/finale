@@ -52,9 +52,11 @@ const skills = sel2 ?{
         <div className='header'>
             <h1 className='title'>HomeCode</h1>
             <h1 className='title1'>|</h1>
+            <div className='menu'>
             <Link to="/" className='home' style={home} onClick={selected}>Home</Link>
             <Link to="/skills" className='skills' style={skills} onClick={selected2}>Skills</Link>
             <Link to="/progetti" className='progetti' style={prj} onClick={selected3}>Progetti</Link>
+            </div>
         <Outlet/>
         
       </div>
