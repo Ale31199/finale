@@ -1,0 +1,139 @@
+body{
+  background-color: rgb(26, 26, 26);
+  height: 1600px;
+}
+
+@media(max-width:600px){
+body{
+  width: auto;
+  overflow:hidden;
+  overflow-y: auto;
+}  
+}
+
+
+.App{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.presentazione{
+display: flex;
+height: 130%;
+width: 80%;
+align-items: center;
+position: absolute;
+top: 25%;
+background-color: rgba(0, 0, 0, 0.616);
+box-shadow: orange 7px 7px 0px 0px;
+border-radius: 0px;
+transition: 1s;
+}
+
+
+
+@media(max-width:600px){
+  .presentazione{
+    width: 98%;
+    height: 160%;
+    box-shadow: orange 7px 7px 0px 0px;
+  }
+}
+@media(max-width:1000px){
+  .presentazione{
+    width: 80%;
+    height: 100%;
+    box-shadow: orange 7px 7px 0px 0px;
+  }
+}
+
+.text{
+  color: orange;
+  position: absolute;
+  left: 25%;
+  font-size: 40px;
+  top: 0%;
+  transition: 1s;
+}
+
+@media(max-width:600px){
+  .text{
+  font-size: 27px;
+  left: 35%;
+  text-align: center;
+  }
+}
+
+.io{
+  width: 17.06%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius: 0px;
+  box-shadow: orange 0px 10px 0px 0px;
+  transition: 1s;
+}
+
+@media(max-width:600px){
+  .io{
+    width: 35%;
+    border-radius: 0px;
+    box-shadow: orange 0px 5px 0px 0px;
+  }
+}
+
+.text2{
+  position: absolute;
+  left: 25%;
+  font-size: 18px;
+  width: 1000px;
+  top: 10%;
+  transition: 1s;
+  text-align: justify;
+}
+
+
+
+@media(max-width:600px){
+  .text2{
+    font-size: 12px;
+    width: 310px;
+    left: 10%;
+    top: 10%;
+  }
+}
+
+@media(max-width:1000px){
+  .text2{
+    font-size: 12px;
+    width: 610px;
+    left: 10%;
+    top: 15%;
+  }
+}
+
+.stats{
+  position: absolute;
+  top: 22%;
+  box-shadow: orange 0px 10px 0px 0px;
+  color: orange;
+  text-align: justify;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 4px;
+}
+
+@media(max-width:600px){
+  .stats{
+    visibility: hidden;
+  }
+}
+
+@media(max-width:1000px){
+  .stats{
+    visibility: hidden;
+  }
+}

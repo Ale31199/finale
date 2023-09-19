@@ -1,0 +1,131 @@
+.header{
+font-family: 'Montserrat', sans-serif;
+font-weight: bolder;
+display: block;
+align-items: center;
+background-color: black;
+color: white;
+text-decoration: none;
+height: 80px;
+}
+
+
+.home{
+    margin-left: 14%;
+    margin-right: 150px;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    box-shadow: orange 0px 6px 0px 0px;
+}
+
+.home:hover{
+color: orange;
+}
+.skills:hover{
+    color: orange;
+    box-shadow: orange 0px 6px 0px 0px;
+    }
+    .progetti:hover{
+        color: orange;
+        box-shadow: orange 0px 6px 0px 0px;
+        }
+
+.skills{
+margin-right: 150px;
+text-decoration: none;
+color: white;
+font-weight: lighter;
+}
+
+.progetti{
+    margin-right: 150px;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    }
+
+
+
+.title{
+    background-color: transparent;
+    font-weight: bold;
+    display: inline-flex;
+    margin-left: 250px;
+    margin-right: 170px;
+    cursor: default;
+}
+
+@media(max-width:600px){
+    .title{
+        position: absolute;
+        left: 10%;
+        margin-right: 10px;
+        margin-left: 50px;
+    }
+}
+
+.title1{
+    background-color: transparent;
+    font-weight: bold;
+    display: inline-flex;
+    animation: 1s title infinite alternate-reverse;
+    position: absolute;
+    left: 434px;
+}
+
+@media(max-width:600px){
+    .title1{
+        left: 285px;
+    }
+}
+
+@keyframes title{
+     from {opacity: 0;}
+     to {opacity: 1;}
+}
+
+/*
+.menu{
+    filter: invert(1);
+    position: absolute;
+    right: 10%;
+    width: 10%;
+    top: 4%;
+    visibility: hidden;
+  }
+
+  @media(max-width:600px){
+    .menu{
+        visibility: visible;
+    }
+  }
+
+  .menu:hover{
+    rotate: 180deg;
+  }*/
+
+  @media(max-width:600px){
+    .home{
+        top: 105px;
+        position: relative;
+        margin-right: 80px;
+        margin-left: 40px;
+
+    }
+}
+
+@media(max-width:600px){
+    .skills{
+        top: 105px;
+        position: relative;
+        margin-right: 80px;
+    }
+}
+
+@media(max-width:600px){
+    .progetti{
+        top: 105px;
+        position: relative
+    }
+}
