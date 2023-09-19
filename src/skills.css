@@ -1,15 +1,328 @@
-.skills{
+body{
+    height: 100px;
+}
+
+
+.skille{
     display: flex;
     justify-content: center;
 }
 
-.skill{
+
+.skillx{
     position: absolute;
     top: 25%;
     left: 10%;
     width: 400px;
-    height: 500px;
-    border-radius: 90px;
-    background-color: teal;
+    height: 580px;
+    border-radius:20px;
+    background-color: rgb(0, 0, 0);
+    cursor: default;
+}
 
+@media(max-width:1000px){
+    .skillx{
+    width: 40%;
+    height: 550px;
+    top: 200px;
+    }
+}
+
+@media(max-width:700px){
+    .skillx{
+        width: 90%;
+        height: 550px;
+        left: 5%;
+        top: 200px;
+    }
+}
+
+.g,
+.ph,
+.rt, 
+.js,
+.css,
+.html{
+    width: 50% ;
+    position: absolute;
+    top: 4%;
+    left: 25%;
+}
+
+.my{
+    width: 70% ;
+    position: absolute;
+    top: 4%;
+    left: 15%;
+}
+
+.g{
+    filter: invert(1);
+}
+
+
+.boxnameg,
+.boxnamemy,
+.boxnameph,
+.boxnamert,
+.boxnamejs,
+.boxnamecss,
+.boxname{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: orange;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: 40%;
+    align-items: center;
+}
+.nameg,
+.namemy,
+.nameph,
+.namert,
+.namejs,
+.namecss,
+.name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.testag,
+.testamy,
+.testaph,
+.testart,
+.testajs,
+.testacss,
+.testa{
+    position: absolute;
+    top: 50%;
+    font-size: 15px;
+    left: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+.boxskillg,
+.boxskillmy,
+.boxskillph,
+.boxskillrt,
+.boxskilljs,
+.boxskillcss,
+.boxskill{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    background-color: rgb(20, 55, 61);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10% 10% 30% 30%;
+}
+.valutg,
+.valutmy,
+.valutph,
+.valutrt,
+.valutjs,
+.valutcss,
+.valut{
+    font-size: 15px;
+}
+
+.rt{
+    animation: 5s infinite linear spin;
+}
+
+@keyframes spin {
+    to {
+        rotate: 360deg;
+    }
+}
+
+
+/**/
+
+.skillcss{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 400px;
+    height: 580px;
+    border-radius:20px;
+    background-color: rgb(0, 0, 0);
+    cursor: default;
+}
+@media(max-width:1000px){
+    .skillcss{
+    width: 40%;
+    height: 550px;
+    top: 200px;
+    left: 53%;
+    }
+}
+@media(max-width:700px){
+    .skillcss{
+        width: 90%;
+        height: 550px;
+        left: 5%;
+        top: 800px;
+    }
+}
+/**/
+
+
+.skilljs{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 400px;
+    height: 580px;
+    border-radius:20px;
+    background-color: rgb(0, 0, 0);
+    cursor: default;
+}
+@media(max-width:1000px){
+    .skilljs{
+    width: 40%;
+    height: 550px;
+    top: 780px;
+    left: 10%;
+    }
+}
+@media(max-width:700px){
+    .skilljs{
+        width: 90%;
+        height: 550px;
+        left: 5%;
+        top: 1400px;
+    }
+}
+
+/**/
+
+
+
+.skillrt{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 400px;
+    height: 580px;
+    border-radius:20px;
+    background-color: rgb(0, 0, 0);
+    cursor: default;
+}
+@media(max-width:1000px){
+    .skillrt{
+    width: 40%;
+    height: 550px;
+    top: 780px;
+    left: 53%;
+    }
+}
+@media(max-width:700px){
+    .skillrt{
+        width: 90%;
+        height: 550px;
+        left: 5%;
+        top: 2000px;
+    }
+}
+
+
+/**/
+
+
+
+.skillph{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 400px;
+    height: 580px;
+    border-radius:20px;
+    background-color: rgb(0, 0, 0);
+    cursor: default;
+}
+@media(max-width:1000px){
+    .skillph{
+    width: 40%;
+    height: 550px;
+    top: 1360px;
+    left: 10%;
+    }
+}
+@media(max-width:700px){
+    .skillph{
+        width: 90%;
+        height: 550px;
+        left: 5%;
+        top: 2600px;
+    }
+}
+
+
+/**/
+
+
+
+.skillmy{
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    width: 400px;
+    height: 580px;
+    border-radius:20px;
+    background-color: rgb(0, 0, 0);
+    cursor: default;
+}
+@media(max-width:1000px){
+    .skillmy{
+    width: 40%;
+    height: 550px;
+    top: 1360px;
+    left: 53%;
+    }
+}
+@media(max-width:700px){
+    .skillmy{
+        width: 90%;
+        height: 550px;
+        left: 5%;
+        top: 3200px;
+    }
+}
+
+
+/**/
+
+
+
+.skillg{
+    position: absolute;
+    top: 175%;
+    left: 10%;
+    width: 400px;
+    height: 580px;
+    border-radius:20px;
+    background-color: rgb(0, 0, 0);
+    cursor: default;
+}
+@media(max-width:1000px){
+    .skillg{
+    width: 40%;
+    height: 550px;
+    top: 1940px;
+    left: 10%;
+    }
+}
+@media(max-width:700px){
+    .skillg{
+        width: 90%;
+        height: 550px;
+        left: 5%;
+        top: 3800px;
+    }
 }
