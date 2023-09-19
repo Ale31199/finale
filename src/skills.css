@@ -18,6 +18,31 @@ body{
     border-radius:20px;
     background-color: rgb(0, 0, 0);
     cursor: default;
+    transition: 1s;
+}
+
+
+
+.skillx:hover{
+    box-shadow: orange 0px 0px 0px 4px;
+}
+.skillcss:hover{
+    box-shadow: orange 0px 0px 0px 4px;
+}
+.skilljs:hover{
+    box-shadow: orange 0px 0px 0px 4px;
+}
+.skillrt:hover{
+    box-shadow: orange 0px 0px 0px 4px;
+}
+.skillph:hover{
+    box-shadow: orange 0px 0px 0px 4px;
+}
+.skillmy:hover{
+    box-shadow: orange 0px 0px 0px 4px;
+}
+.skillg:hover{
+    box-shadow: orange 0px 0px 0px 4px;
 }
 
 @media(max-width:1000px){
@@ -153,6 +178,7 @@ body{
     border-radius:20px;
     background-color: rgb(0, 0, 0);
     cursor: default;
+    transition: 1s;
 }
 @media(max-width:1000px){
     .skillcss{
@@ -182,6 +208,7 @@ body{
     border-radius:20px;
     background-color: rgb(0, 0, 0);
     cursor: default;
+    transition: 1s;
 }
 @media(max-width:1000px){
     .skilljs{
@@ -213,6 +240,7 @@ body{
     border-radius:20px;
     background-color: rgb(0, 0, 0);
     cursor: default;
+    transition: 1s;
 }
 @media(max-width:1000px){
     .skillrt{
@@ -245,6 +273,7 @@ body{
     border-radius:20px;
     background-color: rgb(0, 0, 0);
     cursor: default;
+    transition: 1s;
 }
 @media(max-width:1000px){
     .skillph{
@@ -277,6 +306,7 @@ body{
     border-radius:20px;
     background-color: rgb(0, 0, 0);
     cursor: default;
+    transition: 1s;
 }
 @media(max-width:1000px){
     .skillmy{
@@ -309,6 +339,7 @@ body{
     border-radius:20px;
     background-color: rgb(0, 0, 0);
     cursor: default;
+    transition: 1s;
 }
 @media(max-width:1000px){
     .skillg{

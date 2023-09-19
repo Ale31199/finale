@@ -119,8 +119,8 @@ transition: 1s;
 .stats{
   position: absolute;
   top: 22%;
-  box-shadow: orange 0px 10px 0px 0px;
-  color: orange;
+  box-shadow: rgb(94, 94, 94) 0px 10px 0px 0px;
+  color: rgb(94, 94, 94);
   text-align: justify;
   display: inline-flex;
   flex-direction: column;

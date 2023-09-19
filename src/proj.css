@@ -1,0 +1,560 @@
+
+body{
+    height: 2000px;
+}
+
+
+.progettix{
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+.prospo{
+    width: 60%;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+@media(max-width:1000px){
+    .prospo{
+        width: 80%;
+        height: 530px;
+        background-color: black;
+        position: absolute;
+        top: 200px;
+        left: 10%;
+    }
+}
+@media(max-width:700px){
+    .prospo{
+        width: 90%;
+        height: 630px;
+        background-color: black;
+        position: absolute;
+        top: 190px;
+        left: 5%;
+    }
+}
+
+
+.spo{
+    width: 23%;
+    position: absolute;
+    top: 3%;
+    left: 9%;
+    padding-right: 90px;
+    padding-bottom: 10%;
+    box-shadow: orange 10px 0px 0px 0px;
+}
+
+@media(max-width:1000px){
+    .spo{
+        width: 30%;
+        position: absolute;
+        top: 20%;
+        left: 6%;
+        padding-right: 45px;
+        box-shadow: orange 10px 0px 0px 0px;
+    }
+}
+
+@media(max-width:700px){
+    .spo{
+        width: 45%;
+        position: absolute;
+        top: 4%;
+        left: 28%;
+        padding-right: 50px;
+        box-shadow: orange 0px 0px 0px 0px;
+    }
+}
+
+
+.boxspo{
+background-color: orange;
+position: absolute;
+right: 0;
+width: 40%;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0px 20px 0px 0px;
+}
+
+@media(max-width:1000px){
+    .boxspo{
+        background-color: orange;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        width: 100%;
+    border-radius: 20px 20px 0px 0px;
+        }
+    }
+
+@media(max-width:700px){
+.boxspo{
+    background-color: orange;
+    position: absolute;
+    right: 0%;
+    top: 35%;
+    width: 100%;
+border-radius: 0px 0px 0px 0px;
+    }
+}
+
+
+.spot{
+position: absolute;
+left: 5%;
+color: black;
+font-family: 'Monserrat', sans-serif;
+}
+
+
+@media(max-width:700px){
+.spot{
+    position: absolute;
+    left: 30%;
+    }
+}
+
+
+
+.tspo{
+position: absolute;
+top: 15%;
+left: 45%;
+right: 5%;
+font-size: 22px;
+text-align: justify;
+}
+@media(max-width:700px){
+    .tspo{
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        right: 5%;
+        font-size: 15px;
+        text-align: justify;
+        }
+}
+
+.buttonspo{
+    position: absolute;
+    bottom: 5%;
+    right: 67%;
+    width: 25%;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Monserrat', sans-serif;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    animation:  infinite alternate-reverse 1s movee;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:1000px){
+    .buttonspo{
+        position: absolute;
+        top: 435px;
+        right: 64%;
+        width: 30%;
+        height: 40px;
+    }
+}
+@media(max-width:700px){
+    .buttonspo{
+        position: absolute;
+        top: 565px;
+        right: 26%;
+        width: 50%;
+    }
+}
+
+@keyframes movee{
+    from{
+        border-radius: 0%;
+    }
+    to{
+        border-radius: 30px;
+    }
+}
+
+
+/**/
+
+.progame{
+    width: 60%;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+@media(max-width:1000px){
+    .progame{
+        width: 80%;
+        height: 530px;
+        background-color: black;
+        position: absolute;
+        top: 900px;
+        left: 10%;
+    }
+}
+@media(max-width:700px){
+    .progame{
+        width: 90%;
+        height: 630px;
+        background-color: black;
+        position: absolute;
+        top: 890px;
+        left: 5%;
+    }
+}
+
+
+.game{
+    width: 23%;
+    position: absolute;
+    top: 3%;
+    left: 9%;
+    padding-right: 90px;
+    padding-bottom: 10%;
+    box-shadow: orange 10px 0px 0px 0px;
+}
+
+@media(max-width:1000px){
+    .game{
+        width: 30%;
+        position: absolute;
+        top: 20%;
+        left: 6%;
+        padding-right: 45px;
+        box-shadow: orange 10px 0px 0px 0px;
+    }
+}
+
+@media(max-width:700px){
+    .game{
+        width: 50%;
+        position: absolute;
+        top: 3%;
+        left: 25%;
+        padding-right: 50px;
+        box-shadow: orange 0px 0px 0px 0px;
+    }
+}
+
+
+.boxgame{
+background-color: orange;
+position: absolute;
+right: 0;
+width: 40%;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0px 20px 0px 0px;
+}
+
+@media(max-width:1000px){
+    .boxgame{
+        background-color: orange;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        width: 100%;
+    border-radius: 20px 20px 0px 0px;
+        }
+    }
+
+@media(max-width:700px){
+.boxgame{
+    background-color: orange;
+    position: absolute;
+    right: 0%;
+    top: 35%;
+    width: 100%;
+border-radius: 0px 0px 0px 0px;
+font-size: 13px;
+    }
+}
+
+
+.gamer{
+position: absolute;
+left: 5%;
+color: black;
+font-family: 'Monserrat', sans-serif;
+}
+
+
+@media(max-width:700px){
+.gamer{
+    position: absolute;
+    left: 17%;
+    }
+}
+
+
+
+.tgame{
+position: absolute;
+top: 15%;
+left: 45%;
+right: 5%;
+font-size: 22px;
+text-align: justify;
+}
+@media(max-width:700px){
+    .tgame{
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        right: 5%;
+        font-size: 15px;
+        text-align: justify;
+        }
+}
+
+.buttongame{
+    position: absolute;
+    bottom: 5%;
+    right: 67%;
+    width: 25%;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Monserrat', sans-serif;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    animation:  infinite alternate-reverse 1s movee;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:1000px){
+    .buttongame{
+        position: absolute;
+        top: 435px;
+        right: 64%;
+        width: 30%;
+        height: 40px;
+    }
+}
+@media(max-width:700px){
+    .buttongame{
+        position: absolute;
+        top: 565px;
+        right: 26%;
+        width: 50%;
+    }
+}
+
+
+
+/**/
+
+.proca{
+    width: 60%;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 150%;
+    left: 20%;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+@media(max-width:1000px){
+    .proca{
+        width: 80%;
+        height: 530px;
+        background-color: black;
+        position: absolute;
+        top: 1600px;
+        left: 10%;
+    }
+}
+@media(max-width:700px){
+    .proca{
+        width: 90%;
+        height: 630px;
+        background-color: black;
+        position: absolute;
+        top: 1590px;
+        left: 5%;
+    }
+}
+
+
+.ca{
+    width: 23%;
+    position: absolute;
+    top: 3%;
+    left: 9%;
+    padding-right: 90px;
+    padding-bottom: 10%;
+    box-shadow: orange 10px 0px 0px 0px;
+}
+
+@media(max-width:1000px){
+    .ca{
+        width: 30%;
+        position: absolute;
+        top: 20%;
+        left: 6%;
+        padding-right: 45px;
+        box-shadow: orange 10px 0px 0px 0px;
+    }
+}
+
+@media(max-width:700px){
+    .ca{
+        width: 50%;
+        position: absolute;
+        top: 3%;
+        left: 25%;
+        padding-right: 50px;
+        box-shadow: orange 0px 0px 0px 0px;
+    }
+}
+
+
+.boxca{
+background-color: orange;
+position: absolute;
+right: 0;
+width: 40%;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0px 20px 0px 0px;
+}
+
+@media(max-width:1000px){
+    .boxca{
+        background-color: orange;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        width: 100%;
+    border-radius: 20px 20px 0px 0px;
+        }
+    }
+
+@media(max-width:700px){
+.boxca{
+    background-color: orange;
+    position: absolute;
+    right: 0%;
+    top: 35%;
+    width: 100%;
+border-radius: 0px 0px 0px 0px;
+font-size: 13px;
+    }
+}
+
+
+.cal{
+position: absolute;
+left: 5%;
+color: black;
+font-family: 'Monserrat', sans-serif;
+}
+
+
+@media(max-width:700px){
+.cal{
+    position: absolute;
+    left: 25%;
+    }
+}
+
+
+
+.tca{
+position: absolute;
+top: 15%;
+left: 45%;
+right: 5%;
+font-size: 22px;
+text-align: justify;
+}
+@media(max-width:700px){
+    .tca{
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        right: 5%;
+        font-size: 15px;
+        text-align: justify;
+        }
+}
+
+.buttonca{
+    position: absolute;
+    bottom: 5%;
+    right: 67%;
+    width: 25%;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Monserrat', sans-serif;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    animation:  infinite alternate-reverse 1s movee;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:1000px){
+    .buttonca{
+        position: absolute;
+        top: 435px;
+        right: 64%;
+        width: 30%;
+        height: 40px;
+    }
+}
+@media(max-width:700px){
+    .buttonca{
+        position: absolute;
+        top: 565px;
+        right: 26%;
+        width: 50%;
+    }
+}
+
+
+
+.prospo:hover{
+    box-shadow: orange 0px 0px 0px 3px;
+}
+.proca:hover{
+    box-shadow: orange 0px 0px 0px 3px;
+}
+.progame:hover{
+    box-shadow: orange 0px 0px 0px 3px;
+}

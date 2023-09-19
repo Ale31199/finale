@@ -36,11 +36,11 @@ height: 80px;
     text-decoration: none;
     color: white;
     font-weight: lighter;
-    box-shadow: orange 0px 6px 0px 0px;
 }
 
 .home:hover{
 color: orange;
+box-shadow: orange 0px 6px 0px 0px;
 }
 .skills:hover{
     color: orange;
