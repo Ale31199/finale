@@ -607,20 +607,20 @@ text-align: justify;
 }
 
 @keyframes gira{
-    25%{box-shadow: rgb(33, 206, 85) 10px 0px 0px 1px;}
-    50%{box-shadow: rgb(33, 206, 85) 0px 10px 0px 1px;}
-    75%{box-shadow: rgb(33, 206, 85) -10px 0px 0px 1px;}
-    95%{box-shadow: rgb(33, 206, 85) 0px -10px 0px 1px;}
+    25%{box-shadow: rgb(33, 206, 85) 10px 0px 0px 0px;}
+    50%{box-shadow: rgb(33, 206, 85) 0px 10px 0px 0px;}
+    75%{box-shadow: rgb(33, 206, 85) -10px 0px 0px 0px;}
+    95%{box-shadow: rgb(33, 206, 85) 0px -10px 0px 0px;}
 }
 @keyframes gira2{
-    25%{box-shadow: rgb(119, 65, 155) 10px 0px 0px 1px;}
-    50%{box-shadow: rgb(119, 65, 155) 0px 10px 0px 1px;}
-    75%{box-shadow: rgb(119, 65, 155) -10px 0px 0px 1px;}
-    95%{box-shadow: rgb(119, 65, 155) 0px -10px 0px 1px;}
+    25%{box-shadow: rgb(119, 65, 155) 10px 0px 0px 0px;}
+    50%{box-shadow: rgb(119, 65, 155) 0px 10px 0px 0px;}
+    75%{box-shadow: rgb(119, 65, 155) -10px 0px 0px 0px;}
+    95%{box-shadow: rgb(119, 65, 155) 0px -10px 0px 0px;}
 }
 @keyframes gira3{
-    25%{box-shadow: rgb(177, 31, 31) 10px 0px 0px 1px;}
-    50%{box-shadow: rgb(177, 31, 31) 0px 10px 0px 1px;}
-    75%{box-shadow: rgb(177, 31, 31) -10px 0px 0px 1px;}
-    95%{box-shadow: rgb(177, 31, 31) 0px -10px 0px 1px;}
+    25%{box-shadow: rgb(177, 31, 31) 10px 0px 0px 0px;}
+    50%{box-shadow: rgb(177, 31, 31) 0px 10px 0px 0px;}
+    75%{box-shadow: rgb(177, 31, 31) -10px 0px 0px 0px;}
+    95%{box-shadow: rgb(177, 31, 31) 0px -10px 0px 0px;}
 }
