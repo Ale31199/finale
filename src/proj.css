@@ -597,13 +597,13 @@ text-align: justify;
 
 .prospo:hover{
     /*box-shadow: orange 0px 0px 0px 3px;*/
-    animation: 4s infinite alternate-reverse gira;
+    animation: 5s infinite alternate-reverse gira;
 }
 .proca:hover{
-    animation: 4s infinite alternate-reverse gira3;
+    animation: 5s infinite alternate-reverse gira3;
 }
 .progame:hover{
-    animation: 4s infinite alternate-reverse gira2;
+    animation: 5s infinite alternate-reverse gira2;
 }
 
 @keyframes gira{

@@ -15,29 +15,52 @@ height: 80px;
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 4%;
+    top: 2.5%;
     left: 40%;
+    background-color: rgb(44, 44, 44);
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width:1000px){
     .menu{
-        left: 1%;
-        top: 0%;
+        left: 45%;
+        top: 2.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 400px;
+        background-color: rgb(44, 44, 44);
+        border-radius: 10px;
     }
 }
 @media(max-width:700px){
     .menu{
-        left: 0%;
+        left: 7.5%;
+        top: 15%;
+        background-color: rgb(44, 44, 44);
+        color: white;
+        width: auto;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
     }
 }
 
 
 .homeq{
-    margin-left: 14%;
+    margin-left: 3%;
     margin-right: 150px;
     text-decoration: none;
     color: white;
     font-weight: lighter;
+
 }
 
 .homeq:hover{
@@ -143,17 +166,17 @@ font-weight: lighter;
 
   @media(max-width:1000px){
     .homeq{
-        top: 30px;
+        top: 0px;
         position: relative;
         margin-right: 80px;
-        margin-left: 480px;
+        margin-left: 10px;
 
     }
 }
 
 @media(max-width:1000px){
     .skills{
-        top: 30px;
+        top: 0px;
         position: relative;
         margin-right: 80px;
     }
@@ -161,7 +184,7 @@ font-weight: lighter;
 
 @media(max-width:1000px){
     .progetti{
-        top: 30px;
+        top: 0px;
         position: relative
     }
 }
@@ -171,26 +194,28 @@ font-weight: lighter;
 
   @media(max-width:700px){
     .homeq{
-        top: 105px;
+        top: 0;
         position: relative;
         margin-right: 80px;
-        margin-left: 40px;
-
+        margin-left: 10px;
+   color: white;
     }
 }
 
 @media(max-width:700px){
     .skills{
-        top: 105px;
+        top: 0;
         position: relative;
         margin-right: 80px;
+        color: white;
     }
 }
 
 @media(max-width:700px){
     .progetti{
-        top: 105px;
-        position: relative
+        top: 0;
+        position: relative;
+        color: white;
     }
 }
 
