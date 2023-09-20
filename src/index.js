@@ -7,7 +7,7 @@ import Proj from './proj';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './header';
-
+import Spotify from './HomePage';
 
 export default function TheRouter(){
   return(
@@ -17,6 +17,7 @@ export default function TheRouter(){
         <Route index element={<Main/>} />
         <Route path='/skills' element={<Skills/>} />
         <Route path='/progetti' element={<Proj/>} />
+        <Route path='/spotify' element={<Spotify/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

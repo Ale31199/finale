@@ -13,7 +13,7 @@ body{
 .prospo{
     width: 60%;
     height: 400px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.616);
     position: absolute;
     top: 30%;
     left: 20%;
@@ -25,7 +25,7 @@ body{
     .prospo{
         width: 80%;
         height: 530px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.616);
         position: absolute;
         top: 200px;
         left: 10%;
@@ -35,7 +35,7 @@ body{
     .prospo{
         width: 90%;
         height: 630px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.616);
         position: absolute;
         top: 190px;
         left: 5%;
@@ -50,7 +50,7 @@ body{
     left: 9%;
     padding-right: 90px;
     padding-bottom: 10%;
-    box-shadow: orange 10px 0px 0px 0px;
+    box-shadow: rgb(33, 206, 85) 10px 0px 0px 0px;
 }
 
 @media(max-width:1000px){
@@ -60,7 +60,7 @@ body{
         top: 20%;
         left: 6%;
         padding-right: 45px;
-        box-shadow: orange 10px 0px 0px 0px;
+        box-shadow: rgb(33, 206, 85) 10px 0px 0px 0px;
     }
 }
 
@@ -77,7 +77,7 @@ body{
 
 
 .boxspo{
-background-color: orange;
+background-color: rgb(33, 206, 85);
 position: absolute;
 right: 0;
 width: 40%;
@@ -90,7 +90,7 @@ border-radius: 0px 20px 0px 0px;
 
 @media(max-width:1000px){
     .boxspo{
-        background-color: orange;
+        background-color: rgb(33, 206, 85);
         position: absolute;
         right: 0%;
         top: 0%;
@@ -101,7 +101,7 @@ border-radius: 0px 20px 0px 0px;
 
 @media(max-width:700px){
 .boxspo{
-    background-color: orange;
+    background-color: rgb(33, 206, 85);
     position: absolute;
     right: 0%;
     top: 35%;
@@ -161,6 +161,10 @@ text-align: justify;
     color: black;
     animation:  infinite alternate-reverse 1s movee;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -184,11 +188,14 @@ text-align: justify;
 }
 
 @keyframes movee{
-    from{
-        border-radius: 0%;
+    0%{
+        border-radius: 9px;
+        
+       
     }
-    to{
-        border-radius: 30px;
+    100%{
+        border-radius: 35px;
+        
     }
 }
 
@@ -198,7 +205,7 @@ text-align: justify;
 .progame{
     width: 60%;
     height: 400px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.616);
     position: absolute;
     top: 90%;
     left: 20%;
@@ -210,7 +217,7 @@ text-align: justify;
     .progame{
         width: 80%;
         height: 530px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.616);
         position: absolute;
         top: 900px;
         left: 10%;
@@ -220,7 +227,7 @@ text-align: justify;
     .progame{
         width: 90%;
         height: 630px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.616);
         position: absolute;
         top: 890px;
         left: 5%;
@@ -235,8 +242,10 @@ text-align: justify;
     left: 9%;
     padding-right: 90px;
     padding-bottom: 10%;
-    box-shadow: orange 10px 0px 0px 0px;
+    box-shadow: rgb(119, 65, 155) 10px 0px 0px 0px;
+    
 }
+
 
 @media(max-width:1000px){
     .game{
@@ -245,7 +254,7 @@ text-align: justify;
         top: 20%;
         left: 6%;
         padding-right: 45px;
-        box-shadow: orange 10px 0px 0px 0px;
+        box-shadow: rgb(119, 65, 155) 10px 0px 0px 0px;
     }
 }
 
@@ -262,7 +271,7 @@ text-align: justify;
 
 
 .boxgame{
-background-color: orange;
+background-color: rgb(119, 65, 155);
 position: absolute;
 right: 0;
 width: 40%;
@@ -275,7 +284,7 @@ border-radius: 0px 20px 0px 0px;
 
 @media(max-width:1000px){
     .boxgame{
-        background-color: orange;
+        background-color: rgb(119, 65, 155);
         position: absolute;
         right: 0%;
         top: 0%;
@@ -286,7 +295,7 @@ border-radius: 0px 20px 0px 0px;
 
 @media(max-width:700px){
 .boxgame{
-    background-color: orange;
+    background-color: rgb(119, 65, 155);
     position: absolute;
     right: 0%;
     top: 35%;
@@ -347,6 +356,10 @@ text-align: justify;
     color: black;
     animation:  infinite alternate-reverse 1s movee;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -364,8 +377,8 @@ text-align: justify;
     .buttongame{
         position: absolute;
         top: 565px;
-        right: 26%;
-        width: 50%;
+        right: 22.5%;
+        width: 55%;
     }
 }
 
@@ -376,7 +389,7 @@ text-align: justify;
 .proca{
     width: 60%;
     height: 400px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.616);
     position: absolute;
     top: 150%;
     left: 20%;
@@ -388,7 +401,7 @@ text-align: justify;
     .proca{
         width: 80%;
         height: 530px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.616);
         position: absolute;
         top: 1600px;
         left: 10%;
@@ -398,7 +411,7 @@ text-align: justify;
     .proca{
         width: 90%;
         height: 630px;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.616);
         position: absolute;
         top: 1590px;
         left: 5%;
@@ -413,7 +426,7 @@ text-align: justify;
     left: 9%;
     padding-right: 90px;
     padding-bottom: 10%;
-    box-shadow: orange 10px 0px 0px 0px;
+    box-shadow: rgb(177, 31, 31) 10px 0px 0px 0px;
 }
 
 @media(max-width:1000px){
@@ -423,7 +436,7 @@ text-align: justify;
         top: 20%;
         left: 6%;
         padding-right: 45px;
-        box-shadow: orange 10px 0px 0px 0px;
+        box-shadow: rgb(177, 31, 31) 10px 0px 0px 0px;
     }
 }
 
@@ -434,13 +447,13 @@ text-align: justify;
         top: 3%;
         left: 25%;
         padding-right: 50px;
-        box-shadow: orange 0px 0px 0px 0px;
+        box-shadow: rgb(177, 31, 31) 0px 0px 0px 0px;
     }
 }
 
 
 .boxca{
-background-color: orange;
+background-color: rgb(177, 31, 31);
 position: absolute;
 right: 0;
 width: 40%;
@@ -453,7 +466,7 @@ border-radius: 0px 20px 0px 0px;
 
 @media(max-width:1000px){
     .boxca{
-        background-color: orange;
+        background-color: rgb(177, 31, 31);
         position: absolute;
         right: 0%;
         top: 0%;
@@ -464,7 +477,7 @@ border-radius: 0px 20px 0px 0px;
 
 @media(max-width:700px){
 .boxca{
-    background-color: orange;
+    background-color: rgb(177, 31, 31);
     position: absolute;
     right: 0%;
     top: 35%;
@@ -525,6 +538,10 @@ text-align: justify;
     color: black;
     animation:  infinite alternate-reverse 1s movee;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -550,11 +567,31 @@ text-align: justify;
 
 
 .prospo:hover{
-    box-shadow: orange 0px 0px 0px 3px;
+    /*box-shadow: orange 0px 0px 0px 3px;*/
+    animation: 4s infinite alternate-reverse gira;
 }
 .proca:hover{
-    box-shadow: orange 0px 0px 0px 3px;
+    animation: 4s infinite alternate-reverse gira3;
 }
 .progame:hover{
-    box-shadow: orange 0px 0px 0px 3px;
+    animation: 4s infinite alternate-reverse gira2;
+}
+
+@keyframes gira{
+    25%{box-shadow: rgb(33, 206, 85) 10px 0px 0px 1px;}
+    50%{box-shadow: rgb(33, 206, 85) 0px 10px 0px 1px;}
+    75%{box-shadow: rgb(33, 206, 85) -10px 0px 0px 1px;}
+    95%{box-shadow: rgb(33, 206, 85) 0px -10px 0px 1px;}
+}
+@keyframes gira2{
+    25%{box-shadow: rgb(119, 65, 155) 10px 0px 0px 1px;}
+    50%{box-shadow: rgb(119, 65, 155) 0px 10px 0px 1px;}
+    75%{box-shadow: rgb(119, 65, 155) -10px 0px 0px 1px;}
+    95%{box-shadow: rgb(119, 65, 155) 0px -10px 0px 1px;}
+}
+@keyframes gira3{
+    25%{box-shadow: rgb(177, 31, 31) 10px 0px 0px 1px;}
+    50%{box-shadow: rgb(177, 31, 31) 0px 10px 0px 1px;}
+    75%{box-shadow: rgb(177, 31, 31) -10px 0px 0px 1px;}
+    95%{box-shadow: rgb(177, 31, 31) 0px -10px 0px 1px;}
 }

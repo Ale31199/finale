@@ -3,11 +3,8 @@ body{
   height: 1600px;
 }
 
-@media(max-width:600px){
+@media(max-width:700px){
 body{
-  width: auto;
-  overflow:hidden;
-  overflow-y: auto;
 }  
 }
 

@@ -9,6 +9,8 @@ text-decoration: none;
 height: 80px;
 }
 
+
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -30,7 +32,7 @@ height: 80px;
 }
 
 
-.home{
+.homeq{
     margin-left: 14%;
     margin-right: 150px;
     text-decoration: none;
@@ -38,7 +40,7 @@ height: 80px;
     font-weight: lighter;
 }
 
-.home:hover{
+.homeq:hover{
 color: orange;
 box-shadow: orange 0px 6px 0px 0px;
 }
@@ -59,7 +61,7 @@ font-weight: lighter;
 }
 
 .progetti{
-    margin-right: 150px;
+    margin-right: 10px;
     text-decoration: none;
     color: white;
     font-weight: lighter;
@@ -67,7 +69,7 @@ font-weight: lighter;
 
 
 
-.title{
+.titlew{
     background-color: transparent;
     font-weight: bold;
     display: inline-flex;
@@ -76,15 +78,16 @@ font-weight: lighter;
     cursor: default;
 }
 @media(max-width:1000px){
-    .title{
+    .titlew{
         position: absolute;
         left: 7%;
         margin-right: 10px;
         margin-left: 50px;
+        top: 0px;
     }
 }
 @media(max-width:700px){
-    .title{
+    .titlew{
         position: absolute;
         left: 10%;
         margin-right: 10px;
@@ -92,7 +95,7 @@ font-weight: lighter;
     }
 }
 
-.title1{
+.title1x{
     background-color: transparent;
     font-weight: bold;
     display: inline-flex;
@@ -101,12 +104,13 @@ font-weight: lighter;
     left: 434px;
 }
 @media(max-width:1000px){
-    .title1{
+    .title1x{
         left: 298px;
+        top: 0;
     }
 }
 @media(max-width:700px){
-    .title1{
+    .title1x{
         left: 285px;
     }
 }
@@ -138,7 +142,7 @@ font-weight: lighter;
 
 
   @media(max-width:1000px){
-    .home{
+    .homeq{
         top: 30px;
         position: relative;
         margin-right: 80px;
@@ -166,7 +170,7 @@ font-weight: lighter;
 
 
   @media(max-width:700px){
-    .home{
+    .homeq{
         top: 105px;
         position: relative;
         margin-right: 80px;
