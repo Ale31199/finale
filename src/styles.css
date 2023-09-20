@@ -1,0 +1,256 @@
+
+
+.Appn{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 700px;
+  background-image: url("./castlenight.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: 1s infinite alternate-reverse luce;
+}
+@keyframes luce{
+  from{box-shadow: rgb(179, 51, 51) 0px 0px 0px 0px;}
+  to{box-shadow: rgb(179, 51, 51) 0px 0px 12px 3px;}
+}
+
+@media(max-width:700px){
+  .Appn{
+top: 30%;
+width: 90%;
+left: 5%;
+  }
+}
+
+
+.alpha {
+  color: white;
+  position: absolute;
+  left: 1%;
+}
+@media(max-width:700px){
+.alpha{
+  left: 10%;
+}
+}
+
+.knight {
+  width: 100px;
+  position: absolute;
+  left: 53%;
+  top: 17px;
+  text-shadow: black 10px 10px 10px 10px;
+}
+@media (max-width: 1000px) {
+  .knight {
+    top: 35px;
+    left: 62%;
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+  }
+}
+@media (max-width: 700px) {
+  .knight {
+    top: 33px;
+    left: 260px;
+    filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+  }
+}
+
+.titlen {
+  font-family: "VT323", monospace;
+  text-align: center;
+  font-size: 90px;
+  animation: 1s pixel infinite alternate-reverse;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: inline-flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  left: 31%;
+  top: 30px;
+  width: 400px;
+}
+
+@media (max-width: 1000px) {
+  .titlen {
+    width: 70%;
+    position: absolute;
+    left: 10%;
+    font-size: 50px;
+    top: 45px;
+  }
+}
+@media (max-width: 700px) {
+  .titlen {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 1%;
+    font-size: 50px;
+    top: 65px;
+  }
+}
+
+@keyframes pixel {
+  to {
+    color: rgb(140, 0, 0);
+  }
+  from {
+    color: rgb(43, 12, 79);
+  }
+}
+
+.menun {
+  background-color: black;
+  border: solid;
+  border-width: 3px;
+  border-color: rgba(255, 255, 255, 0.494);
+  position: absolute;
+  left: 40%;
+  padding-left: 69px;
+  padding-right: 80px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  top: 230px;
+  box-shadow: rgb(19, 1, 34) 0px 0px 20px 7px;
+  color: white;
+  text-align: start;
+  font-size: 30px;
+  opacity: 1;
+  zoom: 100%;
+  transition: 3s;
+  background-image: url("./blackwall2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 747px) {
+  .menun {
+    width: 70px;
+    position: absolute;
+    left: 22%;
+    font-size: 20px;
+    height: 100px;
+    top: 280px;
+  }
+}
+.menutext:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: orange;
+}
+
+@media (max-width: 747px) {
+  .menutext {
+    position: absolute;
+    left: -54%;
+    font-size: 23px;
+    width: 200px;
+    height: 10px;
+    top: -25px;
+  }
+}
+
+.story {
+  font-size: 20px;
+  background-color: rgb(21, 21, 21);
+  position: absolute;
+  top: 30%;
+  left: 105;
+  padding-left: 30px;
+  justify-content: center;
+  height: 450px;
+  width: 90%;
+  padding: 10px;
+  border: solid;
+  border-color: rgb(80, 80, 80);
+  border-width: 1px;
+}
+@media(max-width:700px){
+  .story{
+    height: 250px;
+  }
+}
+.storytext {
+  position: absolute;
+  top: -10px;
+  left: 2%;
+  color: rgb(148, 212, 255);
+  text-align: justify;
+  width: 95%;
+}
+@media(max-width:700px){
+  .storytext{
+    font-size: 11px;
+  }
+}
+
+.optionBox {
+  background-color: transparent;
+  width: 307px;
+  height: 26px;
+  position: relative;
+  top: 200px;
+  font-size: 16px;
+  left: 32%;
+  border: solid;
+  border-color: transparent;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 1000px) {
+  .optionBox {
+    top: 202px;
+    left: 18%;
+  }
+}
+
+@media (max-width: 747px) {
+  .optionBox {
+    top: 170px;
+    left: 3%;
+    width: 65%;
+    font-size: 10px;
+  }
+}
+
+.options {
+  width: 170%;
+  height: 30px;
+  position: relative;
+  top: 100px;
+  left: -25%;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(89, 89, 89);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.options:hover {
+  color: rgb(148, 212, 255);
+  text-decoration: underline;
+  animation: gigi 1s infinite alternate-reverse;
+}
+@keyframes gigi {
+  from {
+    border-color: rgb(89, 89, 89);
+  }
+  to {
+    border-color: rgb(148, 212, 255);
+  }
+}
+

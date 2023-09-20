@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './header';
 import Spotify from './HomePage';
+import PixeL from './test';
 
 export default function TheRouter(){
   return(
@@ -18,6 +19,7 @@ export default function TheRouter(){
         <Route path='/skills' element={<Skills/>} />
         <Route path='/progetti' element={<Proj/>} />
         <Route path='/spotify' element={<Spotify/>}/>
+        <Route path='/pixel' element={<PixeL/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

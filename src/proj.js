@@ -39,10 +39,11 @@ const proj =()=>{
              <div className='boxca'>
                 <h1 className='cal'>CALCULATOR</h1>
              </div>
-             <h1 className='tca'>Questo è il progetto Spotify! Si tratta semplicemente della pagina principale, mostrando le playlist preferite, gli artisti e altro ancora. Potrebbe avere qualche problema con la adattabilità di alcuni schermi.
-             ma per il resto dovrebbe essere tutto funzionante! Ovviamente non riproduce musica, ma è solo per il lato estetico con qualche piccola interattività.
+             <h1 className='tca'>Questo è il progetto Calculator! Si tratta semplicemente di una calcolatrice con uno stile un po suo. C'è sempre il nostro amico Sticky a fare compagnia nel mentre facciamo i calcoli,
+             e ogni volta che apri la calcolatrice ti dice qualcosa, delle frasi random. Puoi anche cliccare sulla frase per cambiarla!. Puoi cambiare lo stile della calcolatrice cliccando i tasti 'Hell Mode' oppure 'Pixel Mode', li puoi disattivare ricliccando il tasto. Puoi accedere agli stili
+             scrivendo '666' per la 'Hell Mode', altrimenti scrivi '10101010' per l'altra modalità!.
              </h1>
-             <Link to='/calco' className='buttonca'>Prova Calulator</Link>
+             <Link to='/calco' className='buttonca'>Prova Calculator</Link>
             </div>
 
 
