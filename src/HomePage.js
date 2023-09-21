@@ -83,13 +83,15 @@ visibility:'visible'
 
   const homesrc = open ? {
     alignItems:'start',
-    width:'370px'
+    width:'270px'
     }
     :{};
 
   const libraryy = open ? {
-  width:'400px',
-  alignItems:'start'
+  width:'300px',
+  alignItems:'start',
+  position:'relative',
+  left:'-298px'
   }
   :{};
 
@@ -160,7 +162,7 @@ visibility:'visible'
                       :{};
 
                       const back = open ? {
-                        width:'370px',
+                        width:'270px',
                         left:'3px',
                         display:'flex',
                         flexDirection:'column'
@@ -171,7 +173,7 @@ visibility:'visible'
                         const main = open
                         ? {
                             width: '1490px',
-                            left: '420px',
+                            left: '320px',
                         
                           }
                         : {};
@@ -221,7 +223,8 @@ visibility:'visible'
 
   return (
     <div className="Appe">
-     
+
+   
      
      <div className='homesrc' style={homesrc}>
       
@@ -629,6 +632,12 @@ visibility:'visible'
 
 
               </div>
+
+              <div className='menumobile'>
+   <img className='homemobile' src={home}></img>
+   <img className='srcmobile' src={src}></img>
+   <img  className='libmobile' src={library}></img>
+    </div>  
     </div>
 
 

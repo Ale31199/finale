@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './header';
 import Spotify from './HomePage';
 import PixeL from './test';
+import Calculator from './Calculator';
 
 export default function TheRouter(){
   return(
@@ -20,6 +21,7 @@ export default function TheRouter(){
         <Route path='/progetti' element={<Proj/>} />
         <Route path='/spotify' element={<Spotify/>}/>
         <Route path='/pixel' element={<PixeL/>}/>
+        <Route path='/calco' element={<Calculator/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
