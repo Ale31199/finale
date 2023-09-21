@@ -83,15 +83,15 @@ visibility:'visible'
 
   const homesrc = open ? {
     alignItems:'start',
-    width:'270px'
+    width:'320px'
     }
     :{};
 
   const libraryy = open ? {
-  width:'300px',
+  width:'320px',
   alignItems:'start',
   position:'relative',
-  left:'-298px'
+  left:'-295px'
   }
   :{};
 

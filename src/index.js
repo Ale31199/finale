@@ -7,9 +7,9 @@ import Proj from './proj';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './header';
-import Spotify from './HomePage';
-import PixeL from './test';
-import Calculator from './Calculator';
+import Spotify from './spotify/HomePage';
+import PixeL from './pixelnightmare/test';
+import Calculator from './calcolatrice/Calculator';
 
 export default function TheRouter(){
   return(
