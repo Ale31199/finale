@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./styles.css";
 import pixgif from "./castlenight.jpg";
 import blackwall from "./blackwall2.jpg";
 import logo from "./logo2.png";
 import gif from "./knight-unscreen.gif";
+import bullet from "./soul.mp3";
+import choicesnd from './choicesound.mp3';
 
 const PixelN=()=>{
   const [start, setStart] = useState(false);
@@ -148,15 +150,53 @@ const PixelN=()=>{
 
   const StoryGame = () => {
     const [currentEvent, setCurrentEvent] = useState("start");
+    const [play, setplay] = useState(false)
+    const [playing, setplaying]=useState('Music On')
+    const audioRef = useRef(null)
+    const choiceRef = useRef(null);
+    const [choiceon, setchoiceon] = useState(false);
+
+    
     const handleChoice = (nextEvent) => {
+      setTimeout(()=>{
       setCurrentEvent(nextEvent);
+    }, 1000)
     };
+  
 
     const event = story[currentEvent];
 
+    
+    const playChoice = () => {
+     choiceRef.current.play()
+      }
+    
+  
+  
+
+  const playMusic=()=>{
+    if (play){
+      audioRef.current.pause();
+      setplaying('Music Off')
+      setplay(false)
+    } else{
+      audioRef.current.play()
+      setplaying('Music On')
+      setplay(true)
+    }
+      
+  }
+
+  const musicOn = play?{
+backgroundColor:'rgb(43, 134, 62)'
+  }
+  :{};
+
+
     return (
       <div className="Appn">
-        
+        <button className="musicbutton" style={musicOn} onClick={playMusic} > {playing}
+        </button> <audio  src={bullet}  ref={audioRef} autoPlay loop />
         <img src={logo} className="titlen" />
         <img src={gif} className="knight" />
         <p className="alpha">Alpha Version :) Coming Soon!</p>
@@ -168,12 +208,13 @@ const PixelN=()=>{
             <p className="optionBox" key={index}>
               <p
                 className="options" 
-                onClick={() => handleChoice(choice.nextEvent)}
+                onClick={() => {handleChoice(choice.nextEvent); playChoice();}}
               >
                 {choice.text}
               </p>
             </p>
           ))}
+          <audio src={choicesnd} ref={choiceRef} onVolumeChange={10}  />
         </ul>
        
       </div>
