@@ -4,8 +4,8 @@ import pixgif from "./castlenight.jpg";
 import blackwall from "./blackwall2.jpg";
 import logo from "./logo2.png";
 import gif from "./knight-unscreen.gif";
-import bullet from "./soul.mp3";
-import choicesnd from './choicesound.mp3';
+import bullet from "./background.wav";
+import choicesnd from './beep.wav';
 
 const PixelN=()=>{
   const [start, setStart] = useState(false);
@@ -184,13 +184,13 @@ const PixelN=()=>{
       setplaying('Music On')
       setplay(true)
     }
-      
   }
 
   const musicOn = play?{
-backgroundColor:'rgb(43, 134, 62)'
-  }
-  :{};
+    backgroundColor:'rgb(43, 134, 62)'
+      }
+      :{};
+ 
 
 
     return (
@@ -214,7 +214,7 @@ backgroundColor:'rgb(43, 134, 62)'
               </p>
             </p>
           ))}
-          <audio src={choicesnd} ref={choiceRef} onVolumeChange={10}  />
+          <audio src={choicesnd} ref={choiceRef} volume={0.5}  />
         </ul>
        
       </div>
