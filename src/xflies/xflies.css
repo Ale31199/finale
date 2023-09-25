@@ -2,12 +2,38 @@
     position: absolute;
     top: 25%;
      width: 94.5%;
-     height: 900px;
-     background-color: rgb(0, 0, 0);
+     height: 830px;
+     background-color: rgb(12, 12, 12);
      margin-left: 50px;
      margin-right: 50px;
      border-radius: 15px;
 }
+
+@media(max-width:1000px){
+    .xApp{
+        margin-left: 10px;
+        margin-right: 10px;
+        left: 2%;
+    }
+}
+@media(max-width:700px){
+    .xApp{
+        margin-left: 10px;
+        margin-right: 10px;
+        left: 0%;
+    }
+}
+
+
+.xApp::-webkit-scrollbar{
+    background-color: black;
+    width: 7px;
+}
+.xApp::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 255, 191);
+    border-radius: 10px;
+}
+
 
 .xHeader{
     display: flex;
@@ -19,11 +45,25 @@
 
 .xlogo{
     border-radius: 15px;
-    filter: invert(1);
     position: absolute;
     left: 10%;
     width: 8%;
 }
+@media(max-width:1000px){
+    .xlogo{
+        width: 10%;
+        left: 8%;
+        top: 3%;
+    }
+}
+@media(max-width:700px){
+    .xlogo{
+        width: 25%;
+        left: 8%;
+        top: 3%;
+    }
+}
+
 
 .xtitle{
     font-size: 50px;
@@ -32,10 +72,447 @@
     top: -1%;
     letter-spacing: 25px;
 }
+@media(max-width:700px){
+    .xtitle{
+        font-size: 35px;
+        letter-spacing: 5px;
+        top: 3%;
+        left: 40%;
+    }
+}
 
 .xundertitle{
     position: absolute;
     left: 20%;
     top: 8%;
-    letter-spacing: 3px;
+    letter-spacing: 2.7px;
 }
+@media(max-width:700px){
+    .xundertitle{
+        font-size: 10px;
+        letter-spacing: 0px;
+        left: 41%;
+        top: 9%;
+    }
+}
+
+.xmenu{
+    width: 80%;
+    height: 40px;
+    background-color: rgb(26, 26, 26);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 25px;
+    border-radius: 10px;
+}
+@media (max-width:1000px) {
+    .xmenu{
+        flex-direction: row;
+        right: 10%;
+        top: 20%;
+        width: 80%;
+        height: 30px;
+        font-size: 20px;
+    }
+}
+@media (max-width:700px) {
+    .xmenu{
+        flex-direction: row;
+        right:5%;
+        top: 20%;
+        width: 90%;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+}
+
+.xhome,
+.xbook,
+.xshop{
+    color: white;
+    text-decoration: none;
+}
+
+.xhome:hover{
+    color: rgb(0, 255, 179);
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+.xbook:hover{
+color: rgb(0, 255, 179);
+cursor: pointer;
+text-decoration: none;
+}
+
+.xshop:hover{
+    color: rgb(0, 255, 179);
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+
+    .xchat{
+        position: absolute;
+        right: 1%;
+        bottom: 20%;
+    }
+
+
+
+
+
+
+
+
+.flies-welcome{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 25%;
+}
+
+
+.flies-alien{
+    width: 20%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    animation: 1s infinite alternate-reverse shake;
+}
+@keyframes shake{
+    from{top: 20%;}
+    to{top: 23%;}
+}
+
+.flies-text{
+    position: absolute;
+    text-align: justify;
+    width: 1000px;
+    right: 10%;
+    top: 0%;
+}
+
+.flies-title{
+    color: rgb(0, 255, 191) ;
+}
+
+.flies-title3{
+    color: rgb(0, 255, 191) ;
+}
+
+.flies-friends{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 90%;
+}
+
+.flies-alien2{
+    width: 20%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+
+.flies-text2{
+    position: absolute;
+    text-align: justify;
+    width: 1000px;
+    right: 10%;
+    top: 3%;
+}
+
+.flies-about{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 155%;
+}
+
+.flies-alien3{
+    width: 20%;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    animation: 3s infinite alternate-reverse ufo;
+}
+@keyframes ufo{
+    from{right: 5%;}
+    to{right: 7%;}
+}
+
+
+.flies-text3{
+    position: absolute;
+    text-align: justify;
+    width: 1000px;
+    left: 5%;
+    top: 8%;
+}
+
+.flies-license{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 200%;
+}
+.flies-alien4{
+    width: 20%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+
+.flies-text4{
+    position: absolute;
+    text-align: justify;
+    width: 1000px;
+    right: 10%;
+    top: 3%;
+}
+
+.flies-area{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 255%;
+}
+.flies-alien5{
+    width: 20%;
+    position: absolute;
+    top: 15%;
+    right: 8%;
+}
+
+
+.flies-text5{
+    position: absolute;
+    text-align: justify;
+    width: 1000px;
+    left: 5%;
+    top: 15%;
+}
+
+
+@media(max-width:1000px){
+    .flies-alien{
+        width: 30%;
+    }
+}
+@media(max-width:1000px){
+    .flies-text{
+        font-size: 13px;
+        width: 400px;
+    }
+}
+
+@media(max-width:1000px){
+    .flies-alien2{
+        width: 30%;
+    }
+}
+@media(max-width:1000px){
+    .flies-text2{
+        font-size: 13px;
+        width: 400px;
+    }
+}
+
+@media(max-width:1000px){
+    .flies-alien3{
+        width: 30%;
+    }
+}
+@media(max-width:1000px){
+    .flies-text3{
+        font-size: 13px;
+        width: 400px;
+    }
+}
+
+@media(max-width:1000px){
+    .flies-alien4{
+        width: 30%;
+    }
+}
+@media(max-width:1000px){
+    .flies-text4{
+        font-size: 13px;
+        width: 400px;
+    }
+}
+
+@media(max-width:1000px){
+    .flies-alien5{
+        width: 30%;
+    }
+}
+@media(max-width:1000px){
+    .flies-text5{
+        font-size: 13px;
+        width: 400px;
+    }
+}
+/**//**//**/
+
+
+
+@media(max-width:700px){
+    .flies-alien{
+        width: 30%;
+        left: 36%;
+        top: 10%;
+        animation: 1s infinite alternate-reverse shake2;
+    }
+    @keyframes shake2 {
+        from{top: 1%;}
+        to{top: 2%;}
+    }
+}
+@media(max-width:700px){
+    .flies-text{
+        font-size: 13px;
+        width: 300px;
+        top: 14%;
+        left: 9.5%;
+    }
+}
+
+@media(max-width:700px){
+    .flies-alien2{
+        width: 30%;
+        left: 36%;
+        top: 3%;
+    }
+    
+}
+@media(max-width:700px){
+    .flies-text2{
+        font-size: 13px;
+        width: 300px;
+        top: 14%;
+        left: 9.5%;
+    }
+}
+@media(max-width:700px){
+    .flies-alien3{
+        width: 30%;
+        left: 36%;
+        top: 3%;
+        animation: 1s infinite alternate-reverse ufo2;
+    }
+    @keyframes ufo2 {
+        from{
+            left: 32%;
+        }
+        
+        to{left: 36%;}
+    }
+}
+@media(max-width:700px){
+    .flies-text3{
+        font-size: 13px;
+        width: 300px;
+        top: 13%;
+        left: 9.5%;
+    }
+}
+@media(max-width:700px){
+    .flies-alien4{
+        width: 30%;
+        left: 36%;
+        top: 3%;
+    }
+}
+@media(max-width:700px){
+    .flies-text4{
+        font-size: 13px;
+        width: 300px;
+        top: 13%;
+        left: 9.5%;
+    }
+}
+@media(max-width:700px){
+    .flies-alien5{
+        width: 30%;
+        left: 36%;
+        top: 3%;
+    }
+}
+@media(max-width:700px){
+    .flies-text5{
+        font-size: 13px;
+        width: 300px;
+        top: 13%;
+        left: 9.5%;
+    }
+}
+
+
+/**//**//**/
+@media(max-width:700px){
+    .flies-welcome{
+        font-size: 13px;
+        width: 370px;
+        height: 850px;
+    }
+}
+@media(max-width:700px){
+    .flies-friends{
+        font-size: 13px;
+        width: 370px;
+        height: 860px;
+        top: 125%;
+    }
+}
+@media(max-width:700px){
+    .flies-about{
+        font-size: 13px;
+        width: 370px;
+        height: 850px;
+        top: 226%;
+    }
+}
+@media(max-width:700px){
+    .flies-license{
+        font-size: 13px;
+        width: 370px;
+        top: 300%;
+        height: 990px;
+    }
+}
+@media(max-width:700px){
+    .flies-area{
+        font-size: 13px;
+        width: 370px;
+        top: 405%;
+        height: 650px;
+    }
+}
+
+@media(max-width:700px){
+    .flies-title{
+        text-align: center;
+    }
+}
+
+@media(max-width:700px){
+    .flies-title3{
+        text-align: center;
+    }
+}
+

@@ -1,6 +1,7 @@
 import calc from './img/calculator.png';
 import game from './img/gamepad.png';
 import spotify from'./img/spotify.png';
+import alien from './xflies/ximg/alien.png';
 import './proj.css';
 import {Outlet, Link} from 'react-router-dom';
 
@@ -11,7 +12,17 @@ const proj =()=>{
     return(
         <div className='progettix'>
 
-            <Link to='/xflies' className='aliens'>Try Xflies</Link>
+            
+            <div className='prof'>
+             <img src={alien} className='fl'></img>
+             <div className='boxf'>
+                <h1 className='f'>XFLIES</h1>
+             </div>
+             <h1 className='tf'>Questo è il progetto XFlies! Un sito dove poter comprare biglietti per andare nello spazio, tutto grazie ai nostri amici extraterrestri! Insieme a quello c'è anche la sezione di shop online incluso sempre a tema spazio!
+             Prova ora e guarda cosa può offrire. 
+             </h1>
+             <Link to='/xflies' className='aliens'>Try Xflies</Link>
+            </div>
 
             <div className='prospo'>
              <img src={spotify} className='spo'></img>
