@@ -1,0 +1,41 @@
+.xApp{
+    position: absolute;
+    top: 25%;
+     width: 94.5%;
+     height: 900px;
+     background-color: rgb(0, 0, 0);
+     margin-left: 50px;
+     margin-right: 50px;
+     border-radius: 15px;
+}
+
+.xHeader{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 150px;
+    box-shadow:rgb(0, 128, 111) 0px 15px 10px -13px;
+}
+
+.xlogo{
+    border-radius: 15px;
+    filter: invert(1);
+    position: absolute;
+    left: 10%;
+    width: 8%;
+}
+
+.xtitle{
+    font-size: 50px;
+    position: absolute;
+    left: 20%;
+    top: -1%;
+    letter-spacing: 25px;
+}
+
+.xundertitle{
+    position: absolute;
+    left: 20%;
+    top: 8%;
+    letter-spacing: 3px;
+}

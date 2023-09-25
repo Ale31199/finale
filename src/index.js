@@ -10,7 +10,7 @@ import Header from './header';
 import Spotify from './spotify/HomePage';
 import PixeL from './pixelnightmare/test';
 import Calculator from './calcolatrice/Calculator';
-import Xflies from './xflies';
+import Xflies from './xflies/xflies';
 
 export default function TheRouter(){
   return(
