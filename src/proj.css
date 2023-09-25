@@ -624,3 +624,10 @@ text-align: justify;
     75%{box-shadow: rgb(177, 31, 31) -10px 0px 0px 0px;}
     95%{box-shadow: rgb(177, 31, 31) 0px -10px 0px 0px;}
 }
+
+
+
+.aliens{
+    position: absolute;
+top: 13%;
+}

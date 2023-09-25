@@ -11,6 +11,8 @@ const proj =()=>{
     return(
         <div className='progettix'>
 
+            <Link to='/xflies' className='aliens'>Try Xflies</Link>
+
             <div className='prospo'>
              <img src={spotify} className='spo'></img>
              <div className='boxspo'>

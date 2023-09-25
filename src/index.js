@@ -10,6 +10,7 @@ import Header from './header';
 import Spotify from './spotify/HomePage';
 import PixeL from './pixelnightmare/test';
 import Calculator from './calcolatrice/Calculator';
+import Xflies from './xflies';
 
 export default function TheRouter(){
   return(
@@ -22,6 +23,7 @@ export default function TheRouter(){
         <Route path='/spotify' element={<Spotify/>}/>
         <Route path='/pixel' element={<PixeL/>}/>
         <Route path='/calco' element={<Calculator/>}/>
+        <Route path='/xflies' element={<Xflies/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
