@@ -12,6 +12,7 @@ import PixeL from './pixelnightmare/test';
 import Calculator from './calcolatrice/Calculator';
 import Xflies from './xflies/xflies';
 import Xbook from './xflies/xtickets';
+import Preordina from './xflies/preordina';
 
 export default function TheRouter(){
   return(
@@ -26,6 +27,7 @@ export default function TheRouter(){
         <Route path='/calco' element={<Calculator/>}/>
         <Route path='/xflies' element={<Xflies/>}/>
         <Route path='/xbook' element={<Xbook/>}/>
+        <Route path='/terra' element={<Preordina/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

@@ -30,7 +30,7 @@ const proj =()=>{
                 <h1 className='spot'>SPOTIFY</h1>
              </div>
              <h1 className='tspo'>Questo è il progetto Spotify! Si tratta semplicemente della pagina principale, mostrando le playlist preferite, gli artisti e altro ancora. Potrebbe avere qualche problema con la adattabilità di alcuni schermi.
-             ma per il resto dovrebbe essere tutto funzionante! Ovviamente non riproduce musica, ma è solo per il lato estetico con qualche piccola interattività. NOTA: Al momento non è visualizzabile su mobile o schermi piccoli, consiglio di visualizzarlo su PC.
+             ma per il resto dovrebbe essere tutto funzionante! Ovviamente non riproduce musica, ma è solo per il lato estetico con qualche piccola interattività. 
              </h1>
              <Link  to='/spotify' className='buttonspo'>Prova Spotify</Link>
             </div>

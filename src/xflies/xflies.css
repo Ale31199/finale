@@ -158,18 +158,6 @@ text-decoration: none;
     }
 
 
-    .xchat{
-        position: absolute;
-        right: 1%;
-        bottom: 20%;
-    }
-
-
-
-
-
-
-
 
 .flies-welcome{
     width: 100%;
@@ -237,7 +225,7 @@ text-decoration: none;
     height: 500px;
     background-color: rgb(12, 12, 12);
     position: absolute;
-    top: 155%;
+    top: 150%;
 }
 
 .flies-alien3{
@@ -266,7 +254,12 @@ text-decoration: none;
     height: 500px;
     background-color: rgb(12, 12, 12);
     position: absolute;
-    top: 200%;
+    top: 195%;
+}
+@media(max-width:1000px){
+    .flies-license{
+        height: 600px;
+    }
 }
 .flies-alien4{
     width: 20%;
@@ -290,6 +283,12 @@ text-decoration: none;
     background-color: rgb(12, 12, 12);
     position: absolute;
     top: 255%;
+}
+@media (max-width:1000px) {
+    .flies-area{
+        top: 260%;
+    }
+    
 }
 .flies-alien5{
     width: 20%;

@@ -1,5 +1,5 @@
 import './xflies.css';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import alien from './ximg/alien.png';
 import alien1 from './ximg/alien1.png';
 import alien2 from './ximg/alien2.png';
@@ -15,22 +15,26 @@ import {Link} from 'react-router-dom';
 
 
 function Xmain(){
+const [time, settime]=useState(new Date())
 
+ useEffect(()=>{
+        const nowtime = setTimeout(()=>{
+                settime(new Date())
+        }, 1000)
+        return()=> clearInterval(nowtime)
+ })
 
         return(
             <main className='xApp'>
-
-<div className='xchat'>
-        <img src={chat} className='xchatimg'></img>
-      </div>
 
             <header className='xHeader'>
                   <img src={alien} className='xlogo'></img>
                 <h1 className='xtitle'>X-FLIES</h1>
                 <h3 className='xundertitle'>Your First Alien Space Travel</h3>
+                <p className='time'>Ora Locale: {time.toLocaleTimeString()}</p>
                <div className='xmenu'>
                 <Link to='/xflies' className='xhome'>HomePage</Link>
-                <Link to='/xbook' className='xbook'>Buy Tickets</Link>
+                <Link to='/xbook' className='xbook'>Biglietti</Link>
                 <p className='xshop'>X-Shop</p>
                </div>
             </header>

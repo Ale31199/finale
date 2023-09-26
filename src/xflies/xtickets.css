@@ -6,9 +6,15 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 30%;
+    top: 40%;
     overflow: hidden;
     visibility: visible;
+}
+@media(max-width:700px){
+    .carosellobox{
+        top: 35%;
+        height: 800px;
+    }
 }
 
 .carosello{
@@ -34,6 +40,13 @@
         top: 30%;
         left: 10%;
     }
+}@media(max-width:700px){
+    .caroimg{
+        font-size: 35px;
+        left: 28%;
+        top: 8%;
+        width: 45%;
+    }
 }
 
 
@@ -56,11 +69,22 @@
         font-size: 17px;
     }
 }
+@media(max-width:700px){
+    .carotext{
+        font-size: 15px;
+        left: 13%;
+        top: 30%;
+        width: 250px;
+        box-shadow: grey 0px 0px 0px 0px;
+        height: 500px;
+    }
+}
 
 
 .carotitle{
     color: rgb(0, 255, 191);
 }
+
 
 .prenota{
     position: absolute;
@@ -81,7 +105,13 @@
         left:52%;
     }
 }
-
+@media(max-width:700px){
+    .prenota{
+        left: 20%;
+        top: 83%;
+        color: black;
+    }
+}
 
 .prenota:hover{
     background-color: black;
@@ -91,30 +121,465 @@
 .caroprev{
     position: absolute;
     left: 0;
-    top: 45%;
+    top: 25%;
+    height: 250px;
     font-size: 40px;
     cursor: pointer;
     transition: 0.3s;
     border: none;
+    color: black;
     border-radius: 0px 10px 10px 0px;
+}@media(max-width:700px){
+    .caroprev{
+        font-size: 15px;
+        height: 250px;
+        top: 45%;
+    }
 }
 
 .caronext:hover{
-    background-color: orange;
+    background-color: rgb(43, 43, 43);
+    color: rgb(0, 255, 191);
 }
 .caroprev:hover{
-    background-color: orange;
+    background-color: rgb(43, 43, 43);
+    color: rgb(0, 255, 191);
 }
 
 .caronext{
     position: absolute;
     right: 0;
-    top: 45%;
+    top:25%;
+    height: 250px;
     font-size: 40px;
     cursor: pointer;
     transition: 0.3s;
     border: none;
+    color: black;
     border-radius: 10px 0px 0px 10px;
+}
+@media(max-width:700px){
+    .caronext{
+        font-size: 15px;
+        height: 250px;
+        top: 45%;
+    }
+}
+
+.caroricercati{
+    font-size: 50px;
+    color: rgba(0, 255, 191, 0.541);
+    position: absolute;
+    left: 40%;
+    top: -3%;
+}
+
+@media(max-width:1000px){
+    .caroricercati{
+        top: -7%;
+    }
+}
+@media(max-width:700px){
+    .caroricercati{
+        font-size: 35px;
+        left: 7%;
+        top: -3%;
+    }
+}
+
+.tickscopri{
+    font-size: 50px;
+    color: rgba(0, 255, 191, 0.541);
+    position: absolute;
+    left: 38%;
+    top: 5%;
+}
+
+@media(max-width:700px){
+    .tickscopri{
+        font-size: 30px;
+        left: 10%;
+        top: 3%;
+    }
 }
 
 
+.tickbox{
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    height: 2800px;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    visibility: visible;
+}
+@media(max-width:1000px){
+    .tickbox{
+        height: 3600px;
+    }
+}
+@media(max-width:700px){
+    .tickbox{
+        height: 6500px;
+        top: 130%;
+    }
+}
+
+
+.tickets{
+ width: 20%;
+ height: 700px;
+ background-color: rgba(128, 128, 128, 0.253);
+ position: absolute;
+ left: 10%;
+ top: 10%;
+ border-radius: 20px;
+}
+@media(max-width:1000px){
+    .tickets{
+        width: 35%;
+    }
+}
+@media(max-width:700px){
+    .tickets{
+        width: 90%;
+        top: 5%;
+        left: 5%;
+    }
+}
+
+
+.tickimgu,
+.tickimgs{
+width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+}
+.tickimg{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    animation: 60s infinite linear tickspin;
+}
+@keyframes tickspin {
+    from{rotate: 0deg;}
+    to{
+        rotate: 360deg;
+    }
+    
+}
+
+.tickttl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticktitle{
+    position: absolute;
+    top: 30%;
+    color: rgb(0, 255, 191);
+}
+
+.ticktext{
+    position: absolute;
+    top: 40%;
+    text-align: justify;
+    width: 90%;
+    left: 4%;
+}
+
+.tickpre{
+    position: absolute;
+    top: 88%;
+    left: 30%;
+    border: none;
+     padding: 20px;
+     font-size: 20px;
+     background-color: rgb(0, 255, 191);
+     border-radius: 10px;
+     transition: 0.3s;
+     cursor: pointer;
+}
+.tickpre:hover{
+    background-color: black;
+    color: rgb(0, 255, 191);
+}
+@media(max-width:1000px){
+    .tickpre{
+        left: 26%;
+        
+    }
+}
+
+@media(max-width:700px){
+    .tickpre{
+        color: black;
+        left: 28%;
+    }
+}
+
+
+.ticketsgiove{
+    width: 20%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.253);
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    border-radius: 20px;
+}
+@media(max-width:1000px){
+    .ticketsgiove{
+        width: 35%;
+        left: 55%;
+    }
+}
+@media(max-width:700px){
+    .ticketsgiove{
+        width: 90%;
+        top: 17%;
+        left: 5%;
+    }
+}
+
+.ticketsmercurio{
+    width: 20%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.253);
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    border-radius: 20px;
+}
+@media(max-width:1000px){
+    .ticketsmercurio{
+        width: 35%;
+        left: 10%;
+        top: 31%;
+    }
+}
+@media(max-width:700px){
+    .ticketsmercurio{
+        width: 90%;
+        top: 29%;
+        left: 5%;
+    }
+}
+.ticketsnet{
+    width: 20%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.253);
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    border-radius: 20px;
+}
+@media(max-width:1000px){
+    .ticketsnet{
+        width: 35%;
+        left: 55%;
+        top: 31%;
+    }
+}
+@media(max-width:700px){
+    .ticketsnet{
+        width: 90%;
+        top: 41%;
+        left: 5%;
+    }
+}
+
+.ticketsplu{
+    width: 20%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.253);
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    border-radius: 20px;
+}
+@media(max-width:1000px){
+    .ticketsplu{
+        width: 35%;
+        left: 10%;
+        top: 52%;
+    }
+}
+@media(max-width:700px){
+    .ticketsplu{
+        width: 90%;
+        top: 53%;
+        left: 5%;
+    }
+}
+
+.ticketssat{
+    width: 20%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.253);
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    border-radius: 20px;
+}
+@media(max-width:1000px){
+    .ticketssat{
+        width: 35%;
+        left: 55%;
+        top: 52%;
+    }
+}
+@media(max-width:700px){
+    .ticketssat{
+        width: 90%;
+        top: 65%;
+        left: 5%;
+    }
+}
+
+.ticketsura{
+    width: 20%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.253);
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    border-radius: 20px;
+}
+@media(max-width:1000px){
+    .ticketsura{
+        width: 35%;
+        left: 10%;
+        top: 73%;
+    }
+}
+@media(max-width:700px){
+    .ticketsura{
+        width: 90%;
+        top: 77%;
+        left: 5%;
+    }
+}
+
+.ticketsven{
+    width: 20%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.253);
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    border-radius: 20px;
+}@media(max-width:1000px){
+    .ticketsven{
+        width: 35%;
+        left: 55%;
+        top: 73%;
+    }
+}
+@media(max-width:700px){
+    .ticketsven{
+        width: 90%;
+        top: 89%;
+        left: 5%;
+    }
+}
+
+
+
+.tickchat{
+    width: 5%;
+    bottom: 2%;
+    right: 3%;
+    position: fixed;
+    cursor: pointer;
+}
+@media (max-width:1000px) {
+    .tickchat{
+        width: 10%;
+    }
+}
+@media (max-width:700px) {
+    .tickchat{
+        width: 20%;
+    }
+}
+
+.tickassist{
+    width: 30%;
+    height: 500px;
+    right: 2%;
+    bottom: 1%;
+    position: fixed;
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+    visibility: hidden;
+}
+@media (max-width:1000px) {
+    .tickassist{
+        width: 60%;
+    }
+}
+@media (max-width:700px) {
+    .tickassist{
+        width: 90%;
+    }
+}
+
+.assisttext{
+    color: rgb(0, 255, 200);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    position: absolute;
+    top: 60%;
+    padding: 7px;
+    border-radius: 20px;
+    height: 150px;
+    background-color: rgb(48, 48, 48);
+}
+@media (max-width:700px) {
+    .assisttext{
+        width: 85%;
+        font-size: 13px;
+    }
+}
+
+.listass{
+    background-color: rgb(134, 134, 134);
+    display: inline-flex;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    left: 4%;
+    top: 5%;
+}
+.listass:hover{
+    background-color: rgb(201, 201, 201);
+}
+@media (max-width:700px) {
+    .listass{
+        width: 90%;
+        font-size: 13px;
+    }
+}
+
+.time{
+    color: rgb(0, 255, 191);
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+@media (max-width:700px) {
+    .time{
+        visibility: hidden;
+    }
+}

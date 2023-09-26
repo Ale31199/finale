@@ -1,0 +1,257 @@
+.preorder{
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(15, 15, 15);
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.preorderbox{
+    width: 80%;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 20%;
+    border-radius: 20px;
+}
+
+.preorderimg{
+    width: 15%;
+    position: absolute;
+    top: 23%;
+    left: 6%;
+    animation: 60s infinite linear prespin;
+}
+
+@keyframes prespin {
+    from{
+        rotate: 0deg;
+    }
+    
+    to{rotate: 360deg;}
+}
+
+.pretextbox{
+    width: 70%;
+    height: 300px;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    border-radius: 10px;
+}
+
+.pretitle{
+    color: rgb(0, 255, 191);
+    position: absolute;
+    left: 5%;
+}
+
+.pretext{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.preinputbox{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.preinputbox2{
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+
+.preinputbox3{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+
+.preinput{
+    font-size: 20px;
+    color: rgb(0, 255, 191);
+}
+
+.prebutton{
+    position: absolute;
+    background-color: rgb(0, 255, 191);
+    color: black;
+    border:none;
+    rotate: -90deg;
+    right:-14%;
+    top: 43.5%;
+    width: 30%;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.prebutton:hover{
+    background-color: black;
+    color: rgb(0, 255, 191);
+}
+
+.prepaga{
+    width: 38%;
+    height: 150px;
+    background-color: rgba(128, 128, 128, 0);
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.prepagabox{
+    width: 70%;
+    height: 35px;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.prepagabox2{
+    width: 70%;
+    height: 35px;
+    background-color: black;
+    position: absolute;
+    top: 25.5%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.prepagabox3{
+    width: 70%;
+    height: 35px;
+    background-color: black;
+    position: absolute;
+    top: 51.5%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.prepagabox4{
+    width: 70%;
+    height: 35px;
+    background-color: black;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.prepagabox:hover{
+    color: rgb(0, 255, 191);
+}
+.prepagabox2:hover{
+    color: rgb(0, 255, 191);
+}
+.prepagabox3:hover{
+    color: rgb(0, 255, 191);
+}
+.prepagabox4:hover{
+    color: rgb(0, 255, 191);
+}
+
+.pagaimg{
+    width: 10%;
+    position: absolute;
+    left: 7%;
+}
+
+.pagatext{
+    position: absolute;
+    left: 30%;
+}
+
+.spesabox{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.personebox{
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.persona1,
+.persona2,
+.persona3,
+.persona4,
+.persona5,
+.persona6{
+    border: none;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.persona1:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 191);
+}
+.persona2:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 191);
+}
+.persona3:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 191);
+}
+.persona4:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 191);
+}
+.persona5:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 191);
+}
+.persona6:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 191);
+}
+
+.spesatot{
+    position: absolute;
+    left: 15%;
+    top: 73%;
+    font-size: 20px;
+}
+
+.preinput-input{
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.grazietext{
+    position: absolute;
+    top: 120%;
+    left: -30%;
+    font-size: 20px;
+}
