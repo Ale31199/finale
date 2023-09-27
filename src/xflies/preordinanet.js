@@ -1,4 +1,4 @@
-import earth from './ximg/earth.png';
+import neptune from './ximg/neptune.png';
 import alien from './ximg/alien.png';
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
@@ -21,7 +21,7 @@ function Preordina(){
     const [pay, setpay]=useState(false)
     const [ame, setame]=useState(false)
     const [mas, setmas]=useState(false)
-    const [tot, settot]=useState(499)
+    const [tot, settot]=useState(1299)
     const [pe1, setp1]=useState('1')
     const [pe2, setp2]=useState('2')
     const [pe3, setp3]=useState('3')
@@ -66,7 +66,7 @@ function Preordina(){
         setTimeout(()=>{
         setimmagine(alienok)
         setshowbiglietto(true)
-        settot(499)
+        settot(1299)
         setmess(`Grazie ${nome} per aver acquistato il biglietto! La tua ricevuta è stata inviata con successo a ${email}. 
 
             Nella mail troverai anche il punto di ritrovo per il teletrasporto diretto alla nave spaziale! Ricorda di tenere con te il biglietto. 
@@ -139,9 +139,9 @@ function Preordina(){
     const calcTot1=()=>{
         if(pe1 && s1){
         sets1(false)
-        settot(499)
+        settot(1299)
     } else {
-        settot(499)
+        settot(1299)
         sets1(true)
         sets2(false)
         sets3(false)
@@ -153,9 +153,9 @@ function Preordina(){
     const calcTot2=()=>{
         if(pe2 && s2){
         sets2(false)
-        settot(499)
+        settot(1299)
     } else{
-        settot(499*2)
+        settot(1299*2)
         sets1(false)
         sets2(true)
         sets3(false)
@@ -167,9 +167,9 @@ function Preordina(){
     const calcTot3=()=>{
         if(pe3 && s3){
         sets3(false)
-        settot(499)
+        settot(1299)
     } else{
-        settot(499*3)
+        settot(1299*3)
         sets1(false)
         sets2(false)
         sets3(true)
@@ -181,9 +181,9 @@ function Preordina(){
     const calcTot4=()=>{
         if(pe4 && s4){
         sets4(false)
-        settot(499)
+        settot(1299)
     } else{
-        settot(499*4)
+        settot(1299*4)
         sets1(false)
         sets2(false)
         sets3(false)
@@ -195,9 +195,9 @@ function Preordina(){
     const calcTot5=()=>{
         if(pe5 && s5){
         sets5(false)
-        settot(499)
+        settot(1299)
     } else{
-        settot(499*5)
+        settot(1299*5)
         sets1(false)
         sets2(false)
         sets3(false)
@@ -209,9 +209,9 @@ function Preordina(){
     const calcTot6=()=>{
         if(pe6 && s6){
         sets6(false)
-        settot(499)
+        settot(1299)
     } else{
-        settot(499*6)
+        settot(1299*6)
         sets1(false)
         sets2(false)
         sets3(false)
@@ -348,9 +348,9 @@ return(
 
 <div className='preorder'>
   <div className='preorderbox'>
-   <img src={earth} className='preorderimg'></img>
+   <img src={neptune} className='preorderimg'></img>
    <div className='pretextbox'>
-    <h1 className='pretitle'>Biglietto per Terra</h1>
+    <h1 className='pretitle'>Biglietto per Nettuno</h1>
     <h3 className='pretext'>Metodo di pagamento:</h3>
       <div className='prepaga'>
         <div className='prepagabox' style={pay1} onClick={choosepay}>

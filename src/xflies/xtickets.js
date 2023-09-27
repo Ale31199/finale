@@ -27,6 +27,7 @@ function Carousel(){
     const [opt4, setopt4]=useState("Richiedi l'assistenza dal vivo")
     const [openass, setopenass]=useState(false)
     const [time, settime]=useState(new Date())
+    const [butlink, setbutlink]=useState(<Link to='/marte'>Prenota Ora</Link>)
 
       useEffect(()=>{
         const interval = setInterval(() => {
@@ -53,14 +54,17 @@ function Carousel(){
             setimma(caro.img[1]);
             settl(caro.title[1]);
             setdesc(caro.des[1]);
+            setbutlink(<Link to='/luna'>Prenota Ora</Link>)
         } else if ( imma === caro.img[1] && ttl === caro.title[1] && desc === caro.des[1]){
             setimma(caro.img[2]);
             settl(caro.title[2]);
             setdesc(caro.des[2]);
+            setbutlink(<Link to='/extra'>Prenota Ora</Link>)
         } else if (imma === caro.img[2] && ttl === caro.title[2] && desc === caro.des[2]){
             setimma(caro.img[0]);
             settl(caro.title[0]);
             setdesc(caro.des[0]);
+            setbutlink(<Link to='/marte'>Prenota Ora</Link>)
         }
     }
     const ilCaro2=()=>{
@@ -68,14 +72,17 @@ function Carousel(){
             setimma(caro.img[1]);
             settl(caro.title[1]);
             setdesc(caro.des[1]);
+            setbutlink(<Link to='/luna'>Prenota Ora</Link>)
         } else if ( imma === caro.img[1] && ttl === caro.title[1] && desc === caro.des[1]){
             setimma(caro.img[0]);
             settl(caro.title[0]);
             setdesc(caro.des[0]);
+            setbutlink(<Link to='/marte'>Prenota Ora</Link>)
         }else if (imma === caro.img[0] && ttl === caro.title[0] && desc === caro.des[0]){
             setimma(caro.img[2]);
             settl(caro.title[2]);
             setdesc(caro.des[2]);
+            setbutlink(<Link to='/extra'>Prenota Ora</Link>)
         }
     }
 
@@ -164,7 +171,7 @@ const assistPro4=()=>{
                 <h1 className='caroricercati'>Voli più ricercati</h1>
             <img className='caroimg' src={imma}></img>
             <h3 className='carotext'><h1 className='carotitle'>{ttl}</h1>{desc}
-            <Link className='prenota'>Prenota ora</Link>
+            <button className='prenota'>{butlink}</button>
             </h3>
             </div> 
            
@@ -190,7 +197,7 @@ const assistPro4=()=>{
                     <div className='tickttl'>
                     <h1 className='ticktitle'>GIOVE</h1></div>
                     <h3 className='ticktext'>Preparati per un'esperienza straordinaria mentre viaggi verso Giove, il gigante gassoso del nostro sistema solare! Panorami mozzafiato e lune affascinanti ti aspettano. Biglietti limitati a soli €2,499. Prenota oggi stesso!</h3>
-                    <button className='tickpre'>Prenota ora</button>
+                    <Link to='/giove' className='tickpre'>Prenota ora</Link>
                 </div>
 
                 <div className='ticketsmercurio'>
@@ -198,7 +205,7 @@ const assistPro4=()=>{
                     <div className='tickttl'>
                     <h1 className='ticktitle'>MERCURIO</h1></div>
                     <h3 className='ticktext'>Ti invitiamo a un viaggio emozionante verso Mercurio, il pianeta più vicino al Sole! Scopri paesaggi alieni e caldi tramonti con un viaggio che ti lascerà senza fiato. Biglietti limitati a soli €1,799. Prenota ora per questa esperienza unica!</h3>
-                    <button className='tickpre'>Prenota ora</button>
+                    <Link to='/mercurio' className='tickpre'>Prenota ora</Link>
                 </div>
 
                 <div className='ticketsnet'>
@@ -206,7 +213,7 @@ const assistPro4=()=>{
                     <div className='tickttl'>
                     <h1 className='ticktitle'>NETTUNO</h1></div>
                     <h3 className='ticktext'>Immergiti nella maestosità di Nettuno, il pianeta più lontano dal Sole! Questa è la tua opportunità di esplorare gli oceani di gas, gli anelli incantevoli e le misteriose tempeste di Nettuno. Biglietti limitati a soli €1,299. Prenota ora e preparati per un'esperienza senza pari!</h3>
-                    <button className='tickpre'>Prenota ora</button>
+                    <Link to='/nettuno' className='tickpre'>Prenota ora</Link>
                 </div>
 
                 <div className='ticketsplu'>
@@ -214,7 +221,7 @@ const assistPro4=()=>{
                     <div className='tickttl'>
                     <h1 className='ticktitle'>PLUTONE</h1></div>
                     <h3 className='ticktext'>Scopri il mistero e la bellezza di Plutone, il pianeta nano più lontano dal Sole! Sarai affascinato dalle sue pianure ghiacciate e dalle montagne di ghiaccio. Biglietti limitati a soli €3,999. Prenota ora per un'esperienza straordinaria che ti porterà ai confini del nostro sistema solare!</h3>
-                    <button className='tickpre'>Prenota ora</button>
+                    <Link to='/pluto' className='tickpre'>Prenota ora</Link>
                 </div>
 
                 <div className='ticketssat'>
@@ -222,7 +229,7 @@ const assistPro4=()=>{
                     <div className='tickttl'>
                     <h1 className='ticktitle'>SATURNO</h1></div>
                     <h3 className='ticktext'>Ti invitiamo a scoprire la bellezza incantevole di Saturno, il gigante con gli anelli. Ammira gli anelli scintillanti e le lune misteriose mentre ti immergi in un viaggio spaziale senza precedenti. Biglietti limitati a soli €2,999. Prenota ora per un'esperienza spaziale indimenticabile!</h3>
-                    <button className='tickpre'>Prenota ora</button>
+                    <Link to='/saturno' className='tickpre'>Prenota ora</Link>
                 </div>
 
                 <div className='ticketsura'>
@@ -230,7 +237,7 @@ const assistPro4=()=>{
                     <div className='tickttl'>
                     <h1 className='ticktitle'>URANO</h1></div>
                     <h3 className='ticktext'>Preparati per un'esperienza cosmica senza precedenti mentre ti avventuri verso Urano, il pianeta dai colori incredibili. Scopri gli anelli deboli e le atmosfere misteriose in questo viaggio spaziale unico. Biglietti limitati a soli €1,499. Prenota ora per un'immersione nell'incanto del nostro sistema solare!</h3>
-                    <button className='tickpre'>Prenota ora</button>
+                    <Link to='/urano' className='tickpre'>Prenota ora</Link>
                 </div>
 
                 <div className='ticketsven'>
@@ -238,7 +245,7 @@ const assistPro4=()=>{
                     <div className='tickttl'>
                     <h1 className='ticktitle'>VENERE</h1></div>
                     <h3 className='ticktext'>Scopri l'intensa bellezza di Venere, il pianeta più vicino al Sole! Attraversa nuvole di acido e osserva tramonti infuocati in questo viaggio unico. Biglietti limitati a soli €2,299. Prenota ora e preparati per un'esperienza ardente nell'esplorazione spaziale!</h3>
-                    <button className='tickpre'>Prenota ora</button>
+                    <Link to='/venere' className='tickpre'>Prenota ora</Link>
                 </div>
             </div>
 

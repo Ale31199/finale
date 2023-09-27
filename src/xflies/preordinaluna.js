@@ -1,4 +1,4 @@
-import earth from './ximg/earth.png';
+import fullmoon from './ximg/full-moon.png';
 import alien from './ximg/alien.png';
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
@@ -348,9 +348,9 @@ return(
 
 <div className='preorder'>
   <div className='preorderbox'>
-   <img src={earth} className='preorderimg'></img>
+   <img src={fullmoon} className='preorderimg'></img>
    <div className='pretextbox'>
-    <h1 className='pretitle'>Biglietto per Terra</h1>
+    <h1 className='pretitle'>Biglietto per Luna</h1>
     <h3 className='pretext'>Metodo di pagamento:</h3>
       <div className='prepaga'>
         <div className='prepagabox' style={pay1} onClick={choosepay}>

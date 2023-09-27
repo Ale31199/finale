@@ -13,6 +13,16 @@ import Calculator from './calcolatrice/Calculator';
 import Xflies from './xflies/xflies';
 import Xbook from './xflies/xtickets';
 import Preordina from './xflies/preordina';
+import Preordinagiove from './xflies/preordinagiove';
+import Preordinamercurio from './xflies/preordinamerc';
+import Preordinanet from './xflies/preordinanet';
+import Preordinapluto from './xflies/preordinapluto';
+import Preordinasatu from './xflies/preordinasatu';
+import Preordinaurano from './xflies/preordinaurano';
+import Preordinaven from './xflies/preordinaven';
+import Preordinamarte from './xflies/preordinamarte';
+import Preordinaluna from './xflies/preordinaluna';
+import Preordinaextra from './xflies/preordinaextra';
 
 export default function TheRouter(){
   return(
@@ -28,6 +38,16 @@ export default function TheRouter(){
         <Route path='/xflies' element={<Xflies/>}/>
         <Route path='/xbook' element={<Xbook/>}/>
         <Route path='/terra' element={<Preordina/>}/>
+        <Route path='/giove' element={<Preordinagiove/>}/>
+        <Route path='/mercurio' element={<Preordinamercurio/>}/>
+        <Route path='/nettuno' element={<Preordinanet/>}/>
+        <Route path='/pluto' element={<Preordinapluto/>}/>
+        <Route path='/saturno' element={<Preordinasatu/>}/>
+        <Route path='/urano' element={<Preordinaurano/>}/>
+        <Route path='/venere' element={<Preordinaven/>}/>
+        <Route path='/marte' element={<Preordinamarte/>}/>
+        <Route path='/luna' element={<Preordinaluna/>}/>
+        <Route path='/extra' element={<Preordinaextra/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

@@ -6,7 +6,13 @@
     top: 30%;
     display: flex;
     justify-content: center;
+}@media (max-width:700px) {
+    .preorder{
+        height: 1700px;
+    }
+    
 }
+
 
 .preorderbox{
     width: 80%;
@@ -15,6 +21,19 @@
     position: absolute;
     top: 20%;
     border-radius: 20px;
+}@media (max-width:1000px) {
+    .preorderbox{
+        width: 96%;
+    }
+    
+}
+@media (max-width:700px) {
+    .preorderbox{
+        width: 96%;
+        top: 6%;
+        height: 1000px;
+    }
+    
 }
 
 .preorderimg{
@@ -23,7 +42,21 @@
     top: 23%;
     left: 6%;
     animation: 60s infinite linear prespin;
+}@media (max-width:1000px) {
+    .preorderimg{
+        width: 25%;
+        top: -20%;
+        left: 36%;
+    }   
+}@media (max-width:700px) {
+    .preorderimg{
+        width: 55%;
+        top: -7%;
+        left: 23%;
+    }
+    
 }
+
 
 @keyframes prespin {
     from{
@@ -41,36 +74,83 @@
     top: 12%;
     right: 5%;
     border-radius: 10px;
+}@media (max-width:1000px) {
+    .pretextbox{
+        width: 95%;
+        right: 2%;
+    }
+    
+}@media (max-width:700px) {
+    .pretextbox{
+        top: 6%;
+        height: 92%;
+    }
+    
 }
 
 .pretitle{
     color: rgb(0, 255, 191);
     position: absolute;
     left: 5%;
+}@media (max-width:700px) {
+    .pretitle{
+        font-size: 20px;
+        left: 5%;
+    }
+    
 }
 
 .pretext{
     position: absolute;
     top: 20%;
-    left: 5%;
+    left: 6%;
+}@media (max-width:1000px) {
+    .pretext{
+        left: 5%;
+    }
+    
+}@media (max-width:700px) {
+    .pretext{
+        top: 42%;
+        left: 15%;
+    }
+    
 }
 
 .preinputbox{
     position: absolute;
     top: 10%;
     right: 10%;
+}@media (max-width:700px) {
+    .preinputbox{
+        top: 10%;
+        left: 20%;
+    }
+    
 }
 
 .preinputbox2{
     position: absolute;
     top: 35%;
     right: 10%;
+}@media (max-width:700px) {
+    .preinputbox2{
+        top: 20%;
+        left: 20%;
+    }
+    
 }
 
 .preinputbox3{
     position: absolute;
     top: 60%;
     right: 10%;
+}@media (max-width:700px) {
+    .preinputbox3{
+        top: 30%;
+        left: 20%;
+    }
+    
 }
 
 .preinput{
@@ -91,7 +171,24 @@
     font-size: 30px;
     cursor: pointer;
     transition: 0.3s;
+}@media (max-width:1000px) {
+    .prebutton{
+        right: -16.5%;
+        width: 37.3%;
+        top: 43.2%;
+    }
+    
+}@media (max-width:700px) {
+    .prebutton{
+        top: 90%;
+        left: 0%;
+        rotate: 0deg;
+        width: 100%;
+    }
+    
 }
+
+
 .prebutton:hover{
     background-color: black;
     color: rgb(0, 255, 191);
@@ -108,13 +205,27 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}@media (max-width:1000px) {
+    .prepaga{
+        width: 30%;
+        font-size: 12px;
+    }
+    
+}@media (max-width:700px) {
+    .prepaga{
+        top: 47%;
+        left: 0%;
+        width: 100%;
+        font-size: 12px;
+    }
+    
 }
 
 
 .prepagabox{
     width: 70%;
     height: 35px;
-    background-color: black;
+    background-color: rgb(54, 54, 54);
     position: absolute;
     top: 0%;
     border-radius: 10px;
@@ -125,7 +236,7 @@
 .prepagabox2{
     width: 70%;
     height: 35px;
-    background-color: black;
+    background-color: rgb(54, 54, 54);
     position: absolute;
     top: 25.5%;
     border-radius: 10px;
@@ -135,7 +246,7 @@
 .prepagabox3{
     width: 70%;
     height: 35px;
-    background-color: black;
+    background-color: rgb(54, 54, 54);
     position: absolute;
     top: 51.5%;
     border-radius: 10px;
@@ -145,7 +256,7 @@
 .prepagabox4{
     width: 70%;
     height: 35px;
-    background-color: black;
+    background-color: rgb(54, 54, 54);
     position: absolute;
     bottom: 0%;
     border-radius: 10px;
@@ -187,12 +298,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}@media (max-width:1000px) {
+    .spesabox{
+        width: 19%;
+        font-size: 12px;
+
+    }
+    
+}@media (max-width:700px) {
+    .spesabox{
+        top: 70%;
+        left: 5%;
+        width: 90%;
+        height: 10%;
+    }
+    
 }
 
 .personebox{
     background-color: rgb(49, 49, 49);
     padding: 10px;
     border-radius: 10px;
+}@media (max-width:1000px) {
+    .personebox{
+
+    }
+    
 }
 
 .persona1,
@@ -240,6 +371,19 @@
     left: 15%;
     top: 73%;
     font-size: 20px;
+}@media (max-width:1000px) {
+    .spesatot{
+        left: 6%;
+        top: 80%;
+        font-size: 15px;
+    }
+    
+}@media (max-width:700px) {
+    .spesatot{
+        top: 120%;
+        left: 30%;
+    }
+    
 }
 
 .preinput-input{
@@ -247,11 +391,110 @@
     border-radius: 5px;
     border: none;
     padding: 5px;
+}@media (max-width:700px) {
+    .preinput-input{
+        width: 80%;
+    }
+    
 }
 
 .grazietext{
     position: absolute;
+    top: 3%;
+    left: 1%;
+    font-size: 18px;
+    width: 98%;
+    text-align: justify;
+}@media (max-width:1000px) {
+    .grazietext{
+        font-size: 14px;
+    }
+    
+}@media (max-width:700px) {
+    .grazietext{
+        font-size: 9px;
+    }
+    
+}
+
+
+
+
+
+.confirm{
+    width: 70%;
+    height: 200px;
+    background-color: rgb(15, 15, 15);
+    position: absolute;
     top: 120%;
-    left: -30%;
-    font-size: 20px;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}@media (max-width:1000px) {
+    .confirm{
+        width: 100%;
+        left: 0%;
+    }
+    
+}@media (max-width:700px) {
+    .confirm{
+        width: 95%;
+        top: 165%;
+        height: 200px;
+        left: 2%;
+    }
+    
+}
+
+.confirmbox{
+    width: 80%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0%;
+    border-radius: 20px;
+}@media (max-width:700px) {
+    .confirmbox{
+        width: 100%;
+        height: 200px;
+    }
+    
+}
+
+.confirmimg{
+    width: 15%;
+    position: absolute;
+    top: 12%;
+    left: 4%;
+    animation: 1s infinite alternate-reverse conspin;
+    filter: invert(0.8);
+}@media (max-width:1000px) {
+    .confirmimg{
+        top: 20%;
+    }
+    
+}
+
+@keyframes conspin {
+    from{
+        width: 15%;
+    }
+    
+    to{width: 16%;}
+}
+
+.confirmtextbox{
+    width: 70%;
+    height: 153px;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    border-radius: 10px;
+}@media (max-width:700px) {
+    .confirmtextbox{
+        height: 160px;
+    }
+    
 }

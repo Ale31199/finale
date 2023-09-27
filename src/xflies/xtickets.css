@@ -97,19 +97,24 @@
      border-radius: 10px;
      transition: 0.3s;
      cursor: pointer;
+     color: black;
+     text-decoration:none;
 }
 @media(max-width:1000px){
     .prenota{
         margin-left: 10px;
         margin-right: 10px;
         left:52%;
+        text-decoration: none;
+        color: black;
     }
 }
 @media(max-width:700px){
     .prenota{
-        left: 20%;
+        left: 19%;
         top: 83%;
         color: black;
+        text-decoration: none;
     }
 }
 
@@ -297,7 +302,7 @@ width: 50%;
 .tickpre{
     position: absolute;
     top: 88%;
-    left: 30%;
+    left: 27%;
     border: none;
      padding: 20px;
      font-size: 20px;
@@ -305,6 +310,8 @@ width: 50%;
      border-radius: 10px;
      transition: 0.3s;
      cursor: pointer;
+     text-decoration: none;
+     color: black;
 }
 .tickpre:hover{
     background-color: black;
@@ -320,7 +327,7 @@ width: 50%;
 @media(max-width:700px){
     .tickpre{
         color: black;
-        left: 28%;
+        left: 25%;
     }
 }
 
