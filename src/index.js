@@ -23,6 +23,7 @@ import Preordinaven from './xflies/preordinaven';
 import Preordinamarte from './xflies/preordinamarte';
 import Preordinaluna from './xflies/preordinaluna';
 import Preordinaextra from './xflies/preordinaextra';
+import Xshop from './xflies/xshop';
 
 export default function TheRouter(){
   return(
@@ -48,6 +49,7 @@ export default function TheRouter(){
         <Route path='/marte' element={<Preordinamarte/>}/>
         <Route path='/luna' element={<Preordinaluna/>}/>
         <Route path='/extra' element={<Preordinaextra/>}/>
+        <Route path='/xshop' element={<Xshop/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

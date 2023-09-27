@@ -1,0 +1,96 @@
+.shop-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 1000px; /* Altezza automatica per adattarsi al contenuto */
+    background-color: rgb(15, 15, 15);
+    position: absolute;
+    top: 30%;
+    align-items: center;
+}
+  
+  .item-box {
+    width: 30%; /* Ogni cella occupa tutta la larghezza della colonna */
+    height: 30%; /* Ogni cella occupa tutta l'altezza della riga */
+    background-color: rgb(44, 44, 44);
+    margin-right: 10px; /* Spazio tra le colonne delle celle */
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    margin-right: 5%;
+    border-radius: 20px;
+  }
+
+  .item-img{
+    position: absolute;
+    top: -20%;
+    left: 37.5%;
+    width: 20%;
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+    border-radius:100% ;
+  }
+  
+
+  .item-title{
+    font-size: 30px;
+    position: absolute;
+    left: 5%;
+    color: rgb(0, 255, 191);
+  }
+
+  .item-price{
+    
+    font-size: 30px;
+    position: absolute;
+    right: 5%;
+    color: rgb(0, 255, 191);
+  }
+
+  .item-desc{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    height: 150px;
+    background-color: rgb(73, 73, 73);
+  }
+
+  .item-desc-text{
+    text-align: justify;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+  }
+
+  .item-quantity{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    padding: 5px;
+    font-size: 25px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(14, 14, 14);
+    color: rgb(0, 255, 191);
+    cursor: pointer;
+  }
+
+  .item-cart{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    right:5%;
+    padding: 10px;
+    background-color: rgb(0, 255, 191);
+    transition: 0.3s;
+    color: black;
+  }
+
+  .item-cart:hover{
+    background-color: black;
+    color: rgb(0, 255, 191);
+  }

@@ -162,7 +162,7 @@ const assistPro4=()=>{
                <div className='xmenu'>
                 <Link to='/xflies' className='xhome'>HomePage</Link>
                 <Link to='/xbook' className='xbook'>Biglietti</Link>
-                <p className='xshop'>X-Shop</p>
+                <Link to='/xshop' className='xshop'>X-Shop</Link>
                </div>
 
             </header>
