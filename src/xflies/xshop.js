@@ -27,14 +27,18 @@ import transformer from './ximgshop/transformer.png';
 
 function Carousel(){
     const [time, settime]=useState(new Date())
-   const [list, setlist]=useState([
+    const [list, setlist]=useState([])
+    const [itemname, setitemname]=useState('Atomo')
+    const [itemimg, setitemimg]=useState({atom})
+    const [itemprice, setitemprice]=useState('€17.99')
+    const [itemdesc, setitemdesc]=useState('this is a description.')
 
-   ])
 
     useEffect(()=>{
       const newtime=setInterval(()=> settime(new Date()))
         return()=> clearInterval(newtime)
     })
+
 
 
 
@@ -53,16 +57,14 @@ function Carousel(){
                </div>
 
             </header>
-            
+           
             <div className='shop-grid'>
-
-
                 <div className='item-box'>
-                <img src={atom} className='item-img'></img>
+                 <img src={atom} className='item-img'></img>
                  <p className='item-title'>Atomo</p>
                  <p className='item-price'>€17.99</p>
                  <div className='item-desc'>
-                    <p className='item-desc-text'>this is a description and I dont' know what to do now. I'm building an amazon for aliens.</p>
+                    <p className='item-desc-text'>this is a description.</p>
                  </div>
                  <select className='item-quantity'>
                     <option value={1}>1</option>
@@ -73,9 +75,33 @@ function Carousel(){
                  </select>
                  <button className='item-cart'>Aggiungi al carrello</button>
                 </div>
+                </div>
+
+                <div className='shop-grid'>
+            <div className='item-box'>
+                 <img src={atom} className='item-img'></img>
+                 <p className='item-title'>Atomo</p>
+                 <p className='item-price'>€17.99</p>
+                 <div className='item-desc'>
+                    <p className='item-desc-text'>this is a description.</p>
+                 </div>
+                 <select className='item-quantity'>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+                    <option value={4}>4</option>
+                    <option value={5}>5</option>
+                 </select>
+                 <button className='item-cart'>Aggiungi al carrello</button>
+                </div>
+
                 
+               
 
             </div>
+
+
+             
             
 
         
@@ -85,3 +111,4 @@ function Carousel(){
 }
 
 export default Carousel
+
