@@ -25,17 +25,24 @@ import titanium from './ximgshop/titanium.png';
 import transformer from './ximgshop/transformer.png';
 import xshop from './ximgshop/xshoplogo.png';
 import cart from './ximgshop/shopping-cart.png';
-import { memo } from 'react';
 
 
 function Carousel(){
     const [time, settime]=useState(new Date())
     const [quantity, setquantity]=useState(0)
-    
+    const [carto, setCart]=useState([])
+    const [selectedQuantity, setSelectedQuantity]=useState(1)
+    const qt = [1, 2, 3, 4, 5]
 
 
+    const qtCalc=(selQt)=>{
+            setCart([...carto, selQt])
+}
 
-    
+
+   const CartTot=()=>{
+    setquantity(carto += quantity)
+   }
 
 
     const [products, setproducts]=useState([{
@@ -198,14 +205,12 @@ function Carousel(){
             <div className='item-desc'>
               <p className='item-desc-text'>{item.desc}</p>
             </div>
-            <select className='item-quantity'>
-              <option value={1}>1</option>
-              <option value={2}>2</option>
-              <option value={3}>3</option>
-              <option value={4}>4</option>
-              <option value={5}>5</option>
+           <select className='item-quantity'onChange={qtCalc}>
+            {qt.map((item, index)=>(
+              <option key={index} >{item}</option>
+              ))}
             </select>
-            <button className='item-cart'  >Aggiungi al carrello</button>
+            <button className='item-cart' onClick={CartTot} >Aggiungi al carrello</button>
           </div>
         ))}
       </div>
