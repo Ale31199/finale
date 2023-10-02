@@ -30,10 +30,20 @@ import cart from './ximgshop/shopping-cart.png';
 function Carousel(){
     const [time, settime]=useState(new Date())
     const [quantity, setQuantity]=useState(0)
+    const [addvalue, setAddvalue]=useState(1)
+    const [added, setAdded]=useState('')
 
+    
+    
 
-  
-
+    const CartQt=()=>{
+        setQuantity(quantity + addvalue)
+        setAdded('Added to the cart')
+        setTimeout(()=>{
+            setAdded('')
+        }, 3000)
+    }
+    
 
     const [products, setproducts]=useState([{
         name: 'Atomo',
@@ -196,7 +206,8 @@ function Carousel(){
               <p className='item-desc-text'>{item.desc}</p>
             </div>
            
-            <button className='item-cart'>Aggiungi al carrello</button>
+            <input type='submit' className='item-cart' onClick={CartQt} value='Aggiungi al carrello'></input>
+            <p>{added}</p>
           </div>
         ))}
       </div>
