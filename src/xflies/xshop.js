@@ -30,18 +30,32 @@ import cart from './ximgshop/shopping-cart.png';
 function Carousel(){
     const [time, settime]=useState(new Date())
     const [quantity, setquantity]=useState(0)
-    const [carto, setCart]=useState([])
-    const [selectedQuantity, setSelectedQuantity]=useState(1)
     const qt = [1, 2, 3, 4, 5]
+    const [qt1, setqt1]=useState(1)
+    const [qt2, setqt2]=useState(2)
+    const [qt3, setqt3]=useState(3)
+    const [qt4, setqt4]=useState(4)
+    const [qt5, setqt5]=useState(5)
+    const [totqt, settotqt]=useState([])
 
-
-    const qtCalc=(selQt)=>{
-            setCart([...carto, selQt])
-}
 
 
    const CartTot=()=>{
-    setquantity(carto += quantity)
+    if (qt1 === 1){
+    settotqt(totqt.push(qt1))
+    } else if (qt2 === 2){
+        settotqt(totqt.push(qt2))
+    } else if (qt3 === 3){
+        settotqt(totqt.push(qt3))
+    }else if (qt4 === 4){
+        settotqt(totqt.push(qt4))
+    }else if (qt5 === 5){
+        settotqt(totqt.push(qt5))
+    }
+   }
+
+   const Total =()=>{
+    setquantity([...totqt += quantity])
    }
 
 
@@ -205,12 +219,14 @@ function Carousel(){
             <div className='item-desc'>
               <p className='item-desc-text'>{item.desc}</p>
             </div>
-           <select className='item-quantity'onChange={qtCalc}>
-            {qt.map((item, index)=>(
-              <option key={index} >{item}</option>
-              ))}
+           <select className='item-quantity' onChange={CartTot} >
+              <option value={qt1}>{qt1}</option>
+              <option value={qt2}>{qt2}</option>
+              <option value={qt3}>{qt3}</option>
+              <option value={qt4}>{qt4}</option>
+              <option value={qt5}>{qt5}</option>
             </select>
-            <button className='item-cart' onClick={CartTot} >Aggiungi al carrello</button>
+            <button className='item-cart' onClick={Total} >Aggiungi al carrello</button>
           </div>
         ))}
       </div>

@@ -1,12 +1,13 @@
+import { generatePath } from 'react-router-dom';
 import './Main.css';
 import io from'./img/io.jpg';
+import React, {useState} from 'react';
 
 
 //chi sono, cosa faccio e da quanto, prospettive per il futuro
 
 
 const App =()=> {
-
 
 
   return (
@@ -23,7 +24,6 @@ const App =()=> {
       <li>GitHub --------------------------- <br></br> <a href='https://github.com/Ale31199'>https://github.com/Ale31199</a></li><br></br>
       <li>Linkedin ----- <a href='https://www.linkedin.com/in/alessio-santillo-422186275/'>Alessio Santillo</a></li>
      </div>
-
 
 
      <h2 className='text'>Benvenuto su HomeCode!</h2>                                                        
