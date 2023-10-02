@@ -25,6 +25,10 @@ import titanium from './ximgshop/titanium.png';
 import transformer from './ximgshop/transformer.png';
 import xshop from './ximgshop/xshoplogo.png';
 import cart from './ximgshop/shopping-cart.png';
+import visa from './ximg/visa.png';
+import master from './ximg/card.png';
+import american from './ximg/american-express.png';
+import paypal from './ximg/paypal.png';
 
 
 function Carousel(){
@@ -52,6 +56,24 @@ function Carousel(){
     const [added19, setAdded19]=useState('')
     const [added20, setAdded20]=useState('')
     
+    const [carton, setcarton]=useState(false)
+    const [namecart, setnamecart]=useState('Nessun prodotto nel carrello...')
+    const [imgcart, setimgcart]=useState(alien)
+    const [pricecart, setpricecart]=useState('€ --')
+
+    const [cartt, setCart]=useState([{
+        name:[ 'Atomo', 'Braccio Bionico', 'Bitcoin', 'Blaster', 'Kit Chimico', 'Computer', 'CPU', 'DNA', 'Energia', 'Auto Volante', 'Ologramma', 'Jetpack', 'RAM', 'Robot', 'Razzo', 'Nave Spaziale', 
+        'Teletrasporto', 'Telescopio', 'Titanio', 'Batteria'],
+   
+        price:[49.99, 2999.99, 1557.99, 499.99, 29.99, 749.99, 249.99, 49.99, 149.99, 12999.99, 449.99, 3999.99, 189.99, 2499.99, 459.99, 649999.99,
+       1499999.99, 169.99, 19.99, 79.99],
+   
+        img:[atom, bionic, bitcoin, blaster, chemistry, computer, cpu, dna, energy, flycar, hologram, jetpack, ram, robot, rocket, spaceship, teleport, telescope, titanium, transformer]
+    }])
+
+
+
+    
     
     
 
@@ -61,6 +83,7 @@ function Carousel(){
         setTimeout(()=>{
             setAdded('')
         }, 3000)
+        setCart()
     }
     const CartQt2=()=>{
         setQuantity(quantity + addvalue)
@@ -197,13 +220,27 @@ function Carousel(){
     }
     
 
-
-
-
     useEffect(()=>{
       const newtime=setInterval(()=> settime(new Date()))
         return()=> clearInterval(newtime)
     })
+
+
+
+    const CtOn=()=>{
+        if (carton){
+            setcarton(false)
+        } else {
+            setcarton(true)
+        }
+    }
+
+    const cartPage = carton ?{
+   visibility: 'visible'
+    }
+    :{};
+
+
 
 
     return(
@@ -237,7 +274,7 @@ function Carousel(){
               <p className='item-desc-text'>Prendi il potere dell'infinitamente piccolo con il nostro Atomo. Questo oggetto unico rappresenta il fondamento della materia stessa. Con la sua forma elegante e dettagliata, l'Atomo è una scelta ideale per gli amanti della scienza e gli appassionati di esplorazione. Porta a casa una parte dell'universo in miniatura oggi stesso!</p>
             </div>
             <input type='submit' className='item-cart' onClick={CartQt} value='Aggiungi al carrello'></input>
-            <p>{added}</p>
+            <p className='item-added'>{added}</p>
           </div>
 
           <div className='item-box'>
@@ -454,9 +491,69 @@ function Carousel(){
       </div>
 
       <div className='cart-box'>
-                <img src={cart} className='cart'></img>
-                <p className='cart-quantity'>{quantity}</p>
+
+                <div className='cart-page' style={cartPage}>
+                      
+             {cartt.map((item, index)=>(
+                <div className='cart-page-item-box' key={index}>
+                <img src={item.img} className='cart-page-img'></img>
+                <h2 className='cart-page-name'>{item.name}</h2>
+                <h1 className='cart-page-price'>{item.price}</h1>
+                
+                <p className='cart-page-aumenta'>Aumenta la quantità:</p>
+                <select className='cart-page-qt'>
+                    <option className='cart-page-qt-num'>1</option>
+                    <option className='cart-page-qt-num'>2</option>
+                    <option className='cart-page-qt-num'>3</option>
+                    <option className='cart-page-qt-num'>4</option>
+                    <option className='cart-page-qt-num'>5</option>
+                </select>
+
+                <button className='cart-page-remove'>Rimuovi dal carrello</button>
                 </div>
+             ))}
+                
+                <div className='cart-page-pay-box'>
+                    <h2 className='cart-page-prod'>Prodotti nel carrello ({quantity})</h2>
+
+                    <p className='pay-method-choose' >Metodo di pagamento:</p>
+                    <div className='cart-page-pay-grid'>
+                    
+                        <div className='pay-method'>
+                            <img src={visa} className='pay-img'></img>
+                            <p className='pay-name'>Visa</p>
+                        </div>
+                        <div className='pay-method'>
+                            <img src={master} className='pay-img'></img>
+                            <p className='pay-name'>MasterCard</p>
+                        </div>
+                        <div className='pay-method'>
+                            <img src={american} className='pay-img'></img>
+                            <p className='pay-name'>American Express</p>
+                        </div>
+                        <div className='pay-method'>
+                            <img src={paypal} className='pay-img'></img>
+                            <p className='pay-name'>PayPal</p>
+                        </div>
+                    </div>
+
+                    <p className='pay-total'>Totale: €</p>
+
+                    <button className='pay-button'>Conferma & Acquista</button>
+                </div>
+
+
+
+                </div>
+
+
+
+
+                <img src={cart} className='cart' onClick={CtOn}></img>
+                <p className='cart-quantity'onClick={CtOn}>{quantity}</p>
+
+                
+      </div>
 
             </main>
     )
