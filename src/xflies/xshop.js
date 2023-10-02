@@ -71,102 +71,102 @@ function Carousel(){
 
     const [cartt, setCart]=useState([{
         name: 'Atomo',
-        price:49.99, 
+       price:prod_price[0], 
         img:atom,
     },
     {
         name: 'Braccio Bionico',
-        price:2999.99, 
+        price:prod_price[1], 
         img: bionic,
     },
     {
         name: 'Bitcoin', 
-        price:1557.99,
+        price:prod_price[2],
         img: bitcoin, 
     },
     {
         name:'Blaster',
-        price:499.99,
+        price:prod_price[3],
         img: blaster,
     },
     {
         name:  'Kit Chimico', 
-        price:29.99, 
+        price:prod_price[4], 
         img: chemistry, 
     },
     {
         name:'Computer', 
-        price: 749.99, 
+        price: prod_price[5], 
         img: computer, 
     },
     {
         name:'CPU',
-        price: 249.99,
+        price: prod_price[6],
         img: cpu, 
     },
     {
         name: 'DNA', 
-        price: 49.99, 
+        price: prod_price[7], 
         img:dna, 
     },
     {
         name:'Energia', 
-        price: 149.99, 
+        price: prod_price[8], 
         img: energy, 
     },
     {
         name:  'Auto Volante',
-        price:12999.99, 
+        price:prod_price[9], 
         img: flycar, 
     },
     {
         name:  'Ologramma',
-        price:449.99, 
+        price:prod_price[10], 
         img:hologram, 
     },
     {
         name: 'Jetpack',
-        price:3999.99,
+        price:prod_price[11],
         img: jetpack, 
     },
     {
         name: 'RAM',
-        price:189.99,
+        price:prod_price[12],
         img: ram, 
     },
     {
         name:  'Robot',
-        price:2499.99,
+        price:prod_price[13],
         img: robot, 
     },
     {
         name: 'Razzo',
-        price: 459.99,
+        price: prod_price[14],
         img: rocket, 
     },
     {
         name: 'Nave Spaziale', 
-        price:649999.99,
+        price:prod_price[15],
         img:spaceship, 
     },
     {
         name:'Teletrasporto',
-        price:1499999.99, 
+        price:prod_price[16], 
         img:teleport, 
     },
     {
         name:  'Telescopio',
-        price: 169.99, 
+        price: prod_price[17], 
         img:telescope,
     },
     {
         name:  'Titanio',
-        price: 19.99, 
+        price: prod_price[18], 
         img: titanium, 
     },
     {
         name: 'Batteria',
-        price: 79.99,
+        price: prod_price[19],
         img: transformer
     },
 
