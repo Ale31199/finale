@@ -311,8 +311,6 @@ cursor: pointer;
     visibility: hidden;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    row-gap: 20px;
     justify-content: center;
     overflow: auto;
 }
@@ -326,7 +324,7 @@ cursor: pointer;
     position: relative;
     top: 20%;
     left: 5%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
 }
