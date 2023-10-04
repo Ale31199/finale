@@ -29,6 +29,7 @@ import visa from './ximg/visa.png';
 import master from './ximg/card.png';
 import american from './ximg/american-express.png';
 import paypal from './ximg/paypal.png';
+import { prettyDOM } from '@testing-library/react';
 
 
 function Carousel(){
@@ -79,6 +80,20 @@ function Carousel(){
     const [namecart, setnamecart]=useState('Nessun prodotto nel carrello...')
     const [imgcart, setimgcart]=useState(alien)
     const [priceca, setpriceca]=useState('--')
+
+    const op1 = 1
+    const op2 = 2
+    const op3 = 3
+    const op4 = 4
+    const op5 = 5
+
+    const [onthanks, setonthanks]=useState(false)
+
+
+
+    const thanks = onthanks ? {
+    visibility:'visible'
+    }:{};
 
     const [visaa, setvisa]=useState(false)
     const [pay, setpay]=useState(false)
@@ -158,73 +173,195 @@ function Carousel(){
     const removeItem=(index)=>{
         if(CartQt() === setdisable(true)){
             setdisable(false)
+            setAdded('')
         } 
         if(CartQt2() === setdisable2(true)){
             setdisable2(false)
+            setAdded2('')
         } 
         if(CartQt3() === setdisable3(true)){
             setdisable3(false)
+            setAdded3('')
         } 
         if(CartQt4() === setdisable4(true)){
             setdisable4(false)
+            setAdded4('')
         } 
         if(CartQt5() === setdisable5(true)){
             setdisable5(false)
+            setAdded5('')
         } 
         if(CartQt6() === setdisable6(true)){
             setdisable6(false)
+            setAdded6('')
         } 
         if(CartQt7() === setdisable7(true)){
             setdisable7(false)
+            setAdded7('')
         } 
         if(CartQt8() === setdisable8(true)){
             setdisable8(false)
+            setAdded8('')
         } 
         if(CartQt9() === setdisable9(true)){
             setdisable9(false)
+            setAdded9('')
         } 
         if(CartQt10() === setdisable10(true)){
             setdisable10(false)
+            setAdded10('')
         } 
         if(CartQt11() === setdisable11(true)){
             setdisable11(false)
+            setAdded11('')
         } 
         if(CartQt12() === setdisable12(true)){
             setdisable12(false)
+            setAdded12('')
         } 
         if(CartQt13() === setdisable13(true)){
             setdisable13(false)
+            setAdded13('')
         } 
         if(CartQt14() === setdisable14(true)){
             setdisable14(false)
+            setAdded14('')
         } 
         if(CartQt15() === setdisable15(true)){
             setdisable15(false)
+            setAdded15('')
         } 
         if(CartQt16() === setdisable16(true)){
             setdisable16(false)
+            setAdded16('')
         } 
         if(CartQt17() === setdisable17(true)){
             setdisable17(false)
+            setAdded17('')
         } 
         if(CartQt18() === setdisable18(true)){
-            setdisable2(false)
+            setdisable18(false)
+            setAdded18('')
         } 
         if(CartQt19() === setdisable19(true)){
-            setdisable(false)
+            setdisable19(false)
+            setAdded19('')
         } 
         if(CartQt20() === setdisable20(true)){
-            setdisable2(false)
-        } 
+            setdisable20(false)
+            setAdded20('')
+        }
+       
         const remove = cartt.filter((item, i)=> i !== index)
-        const removePrice= prod_price[index] - pricecart 
-        setpricecart(Math.floor(removePrice))
+        
+        const prezzo = prod_price[index]
+        const newTotalPrice = pricecart - prezzo
+        setpricecart(Math.floor(newTotalPrice))
         setCart(remove)
         setQuantity(quantity - addvalue)
     }
 
+   
+        
+   
+
+    
+
+        /*
+        sistemare e concludere progetto spotify
+        rimettere la storia come era prima in Pixel Nightmare
+        Mettere il sito online!
+        */
+
+
 
     const buy=()=>{
+        if(CartQt() === setdisable(true)){
+            setdisable(false)
+            setAdded('')
+        } 
+        if(CartQt2() === setdisable2(true)){
+            setdisable2(false)
+            setAdded2('')
+        } 
+        if(CartQt3() === setdisable3(true)){
+            setdisable3(false)
+            setAdded3('')
+        } 
+        if(CartQt4() === setdisable4(true)){
+            setdisable4(false)
+            setAdded4('')
+        } 
+        if(CartQt5() === setdisable5(true)){
+            setdisable5(false)
+            setAdded5('')
+        } 
+        if(CartQt6() === setdisable6(true)){
+            setdisable6(false)
+            setAdded6('')
+        } 
+        if(CartQt7() === setdisable7(true)){
+            setdisable7(false)
+            setAdded7('')
+        } 
+        if(CartQt8() === setdisable8(true)){
+            setdisable8(false)
+            setAdded8('')
+        } 
+        if(CartQt9() === setdisable9(true)){
+            setdisable9(false)
+            setAdded9('')
+        } 
+        if(CartQt10() === setdisable10(true)){
+            setdisable10(false)
+            setAdded10('')
+        } 
+        if(CartQt11() === setdisable11(true)){
+            setdisable11(false)
+            setAdded11('')
+        } 
+        if(CartQt12() === setdisable12(true)){
+            setdisable12(false)
+            setAdded12('')
+        } 
+        if(CartQt13() === setdisable13(true)){
+            setdisable13(false)
+            setAdded13('')
+        } 
+        if(CartQt14() === setdisable14(true)){
+            setdisable14(false)
+            setAdded14('')
+        } 
+        if(CartQt15() === setdisable15(true)){
+            setdisable15(false)
+            setAdded15('')
+        } 
+        if(CartQt16() === setdisable16(true)){
+            setdisable16(false)
+            setAdded16('')
+        } 
+        if(CartQt17() === setdisable17(true)){
+            setdisable17(false)
+            setAdded17('')
+        } 
+        if(CartQt18() === setdisable18(true)){
+            setdisable18(false)
+            setAdded18('')
+        } 
+        if(CartQt19() === setdisable19(true)){
+            setdisable19(false)
+            setAdded19('')
+        } 
+        if(CartQt20() === setdisable20(true)){
+            setdisable20(false)
+            setAdded20('')
+        }
+        if(!onthanks){
+            setonthanks(true)
+            setTimeout(()=>{
+                setonthanks(false)
+            }, 2000)
+        } 
         setQuantity(0)
         setpricecart(0)
         setCart([])
@@ -555,6 +692,9 @@ function Carousel(){
         setAdded20('Articolo già aggiunto al carrello')
     }
     }
+    const CartQtUni=()=>{
+        setQuantity(quantity + addvalue)
+    }
     
 
     useEffect(()=>{
@@ -837,14 +977,6 @@ function Carousel(){
                 <h2 className='cart-page-name'>{item.name}</h2>
                 <h1 className='cart-page-price'>€{item.price}</h1>
                 
-                <p className='cart-page-aumenta'>Aumenta la quantità:</p>
-                <select className='cart-page-qt'>
-                    <option className='cart-page-qt-num'>1</option>
-                    <option className='cart-page-qt-num'>2</option>
-                    <option className='cart-page-qt-num'>3</option>
-                    <option className='cart-page-qt-num'>4</option>
-                    <option className='cart-page-qt-num'>5</option>
-                </select>
 
                 <button className='cart-page-remove' onClick={()=>removeItem(index)}>Rimuovi dal carrello</button>
                 </div>
@@ -882,9 +1014,11 @@ function Carousel(){
                     <p className='pay-total'>Totale: €{pricecart}</p>
 
                     <button className='pay-button' onClick={buy}>Conferma & Acquista</button>
+
+                    
                 </div>
 
-
+                <p className='thanks' style={thanks}>Grazie per l'acquisto</p>
 
                 </div>
 
