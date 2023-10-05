@@ -59,14 +59,6 @@ const PixelN=()=>{
       }
       :{};
       //////////////////////////////////////////////////////////////////////
-      const inventory=[
-        'homemade knife',
-        'shovel',
-        'lockpick',
-        'coin'
-
-      ]
-
       //////////////////////////////////////////////////////////////////////
 
       const storia={
@@ -77,16 +69,63 @@ const PixelN=()=>{
         ////
         
         t1:
-        `Before the game starts... What's your name? \n`,
+        "CHAPTER ONE: AWAKENING IN THE CASTLE: The protagonist awakens in a dark and dusty cell within an ancient, pixelated castle. Their mind is clouded, but they immediately hear a distorted voice coming from a glitched device they hold in their hand. It's you, the one who will help them escape from this cursed place. After looking around, the protagonist finds two options and can communicate directly with the you:  Protagonist: 'Hello? Can anyone hear me? My name is Glitchy and it's like I'm trapped in a pixelated nightmare... Can you hear me?'",
         
-        r1:['Start Game'],
+        r1:'I hear you loud and clear!',
         
         ////
-        t2: "Chapter One: The Awakening.\n Glitchy wakes up to find himself inside a seemingly dark cell with little light. Next to him is another prisoner, far worse off because guess what? he is stone dead. Near the corpse, Glitchy finds a small radio with which he can contact someone by trying to find the right channel. Along with the radio, he finds a letter written by the poor unfortunate man who left us for dead. It says: `I don`t know how I got here, I just remember doing my usual things when at some point I feel a great headache and passed out. Now I`m here, alone and abandoned in this dark, damp, putrid cell. I have no idea why I'm here, but after long reflection, unable to do anything else, I think someone injected something in the back of my head, because touching me, there was a bluish liquid on my hand and I doubt it was my blood. Having said that, I am writing this letter to those who will read it, because yes, I don`t think I can do it. I feel poison or whatever it is running through my veins, and I don`t think that`s a good sign. Be careful, and survive. Ps: behind the brick by the window, I have hidden a homemade knife, in case there are any nasty surprises. `",
-        
-        r2:["Continue"],
-        
-        
+        t2: "Oh that's understandable, sorry to hear you're not raedy to help the poor Glitchy... Don't worry, you can come back anytime to start the adventure. Reload the page to restart the game.",
+        ////
+
+        t3: "Oh thanks god! Somehow I'm trapped in here and I have no idea of how got in this horrible place. Now that there's you, maybe you can help me giving me some tips of what to do. Like now, what should I do? Explore the cell for some clues and maybe finding something useful or check the broken window?",
+        r2:["Explore the cell and see what you can find.", "Check the broken window"],
+        /////
+
+        t4: "I checked the cell and I found a dead body with a letter inside his jacket's pocket. The letter says 'I don't have much time left, but in case you're reading this check the mfosinibcisris...'. The letter seems pretty old and consumated, that means I can't read the rest of it. Damn, we gotta find something else here... Oh look I found a knife! He could have used that to defend him self from somthing or someone! Should I take it?...",
+        r3:["Of course! it can be super useful for later!", "No, just leave it there. Nobody is gonna hurt you."],
+        ////
+
+        t5: "Ok, let me see... Ohh shit, I can't go through... the window is too small from me to get out... what do I do now?..",
+        r4:["Ohh damn, then proceed to check the cell"],
+        ////
+
+        t6: "Ok then, wise choice I'll take it just in cas... oh wait... omg no, no no no... the guard is coming in! but I got the knife, so I'm gonna kill him before he kills me... ok ok, what should I do? tell me quick! *guard gets closer to the cell*",
+        r5:["Hide behind the dead body and fake your death","Fight him directly"],
+        ////
+
+        t7: "Oh no, no no no... the guard is coming in, fuck no! I have to do something.. *guard gets closer to the cell* QUICK!!..",
+        r6:["Hide behind the dead body and fake your death","Fight him directly"],
+        ////
+
+        t8:"Ok, good idea.. I'm too afraid to die in here also don't know how to fight, so I'll fake my death behind this rotten body and hope he goes away... *guard opens the cell*",
+        r7: "Wait for Glitchy...",
+        ////
+
+        t9: "He's opening the cell! I'll hide the device so I can fight him, hold on I hope I'll be back, if not.... well, thanks for your help <3... *hide the device*",
+        r8: "Wait for Glitchy...",
+        ////
+
+        t10: "Are you sure?... fine I'll do that but I'm so fucking scared he looks too strong *guard opens the cell*. Please don't ARRRHGHGHGJKVMFKLMSkrskn *Connection Lost... game over*",
+        r9: "Retry...",
+        ////
+       
+        t11:"Heyyy... you still here?... he's gone away! lucky for me I didn't get killed. But now, there's a problem, I gotta find another way if I don't want to get killed next time, what do you think sho.... OMG hold on! he dropped the key on the floor, I didn't notice that I was so scared. Damn I'm so lucky!, ok now let's get out...",
+        r10:"Wowww that's amazing! yes, now open the cell",
+        ////
+
+        t12:"Heyyy... you still here?... I did it, I fucking killed him! I took a while I'm sorry if I made you wait for so long, I had to cover my cuts I got from the fight... he's dead now, fuck I gotta hide him with the other dead body... also I found the key to get out! amazing isn't it? now I wonder, should I disguise myself with his clothes so nobody is gonna suspect or I just leave before they see me?",
+        r11: ["Disguise and get out so you're safer","Just leave before they get you"],
+        ////
+
+        t13: "Phew! That was a close call, but thanks to your guidance, I managed to escape the cell. However, as I step out into the corridor, I realize that this castle is far from abandoned. The air is heavy with an eerie silence, and there's a sense of foreboding that hangs in the atmosphere. As I look ahead, I see multiple paths stretching out before me. To the left, there's a grand staircase that leads upward, its steps worn and ancient. To the right, there's a narrow passageway that disappears into darkness. I can't help but feel a shiver down my spine as I consider the possibilities.",
+        r12: "Continue",
+        ////
+
+        t14:"Once again, I need your help. Which path should I choose? Should I ascend the grand staircase, hoping to find answers on the upper floors? Or should I venture into the mysterious depths of the narrow passageway? I trust your judgment, and I'm counting on your guidance to navigate the dangers of this castle and uncover the truth behind my imprisonment here.",
+        r13:["Ascend the Grand Staicase","Explore the Mysterious Depths"],
+        ////
+        t15: "To be Continue....     Thanks for playing this demo!",
+
         }
 
       /////////////////////////////////////////////////////////////////////
@@ -96,14 +135,147 @@ const PixelN=()=>{
      if(text === storia.t0 && rispo === storia.r0[0]){
       setTimeout(()=>{
       settext(storia.t1)
-      setrisp1(storia.r1[0])
+      setrisp1(storia.r1)
       setrisp2('')
       setshow(true)
     },1500)
-     } else if(text === storia.t1 && rispo === storia.r1[0]){
+     } else if(text === storia.t1 && rispo === storia.r1){
+      setTimeout(()=>{
+      settext(storia.t3)
+      setrisp1(storia.r2[0])
+      setrisp2(storia.r2[1])
+      setshow(false)
+    }, 1500)
+     } else if(text === storia.t0 && rispo === storia.r0[1]){
       setTimeout(()=>{
       settext(storia.t2)
-      setrisp1(storia.r2[0])
+      setrisp1('')
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t3 && rispo === storia.r2[0]){
+      setTimeout(()=>{
+      settext(storia.t4)
+      setrisp1(storia.r3[0])
+      setrisp2(storia.r3[1])
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t3 && rispo === storia.r2[1]){
+      setTimeout(()=>{
+      settext(storia.t5)
+      setrisp1(storia.r4[0])
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t5 && rispo === storia.r4[0]){
+      setTimeout(()=>{
+      settext(storia.t4)
+      setrisp1(storia.r3[0])
+      setrisp2(storia.r3[1])
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t4 && rispo === storia.r3[0]){
+      setTimeout(()=>{
+      settext(storia.t6)
+      setrisp1(storia.r5[0])
+      setrisp2(storia.r5[1])
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t4 && rispo === storia.r3[1]){
+      setTimeout(()=>{
+      settext(storia.t7)
+      setrisp1(storia.r6[0])
+      setrisp2(storia.r6[1])
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t6 && rispo === storia.r5[0]){
+      setTimeout(()=>{
+      settext(storia.t8)
+      setrisp1(storia.r7)
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t6 && rispo === storia.r5[1]){
+      setTimeout(()=>{
+      settext(storia.t9)
+      setrisp1(storia.r8)
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t7 && rispo === storia.r6[0]){
+      setTimeout(()=>{
+      settext(storia.t8)
+      setrisp1(storia.r7)
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t7 && rispo === storia.r6[1]){
+      setTimeout(()=>{
+      settext(storia.t10)
+      setrisp1(storia.r9)
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t10 && rispo === storia.r9){
+      setTimeout(()=>{
+      settext(storia.t7)
+      setrisp1(storia.r6[0])
+      setrisp2(storia.r6[1])
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t8 && rispo === storia.r7){
+      setTimeout(()=>{
+      settext(storia.t11)
+      setrisp1(storia.r10)
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t9 && rispo === storia.r8){
+      setTimeout(()=>{
+      settext(storia.t12)
+      setrisp1(storia.r11[0])
+      setrisp2(storia.r11[1])
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t11 && rispo === storia.r10){
+      setTimeout(()=>{
+      settext(storia.t13)
+      setrisp1(storia.r12)
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t12 && rispo === storia.r11[0]){
+      setTimeout(()=>{
+      settext(storia.t13)
+      setrisp1(storia.r12)
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t12 && rispo === storia.r11[1]){
+      setTimeout(()=>{
+      settext(storia.t13)
+      setrisp1(storia.r12)
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t13 && rispo === storia.r12){
+      setTimeout(()=>{
+      settext(storia.t14)
+      setrisp1(storia.r13[0])
+      setrisp2(storia.r13[1])
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t14 && rispo === storia.r13[0]){
+      setTimeout(()=>{
+      settext(storia.t15)
+      setrisp1('')
+      setrisp2('')
+      setshow(false)
+    }, 1500)
+     }else if(text === storia.t14 && rispo === storia.r13[1]){
+      setTimeout(()=>{
+      settext(storia.t15)
+      setrisp1('')
       setrisp2('')
       setshow(false)
     }, 1500)
@@ -123,25 +295,6 @@ const PixelN=()=>{
 
       <div className="story">
         <p className="storytext">{text}</p>
-
-
-{showinput ? (
-        <div className="insert-name">
-    <input  className="insert-name-input" maxLength={30} type="text" value={newname} onChange={addname}></input>
-    <button className="insert-name-start" onKeyUp={startgame} onClick={writename}>Confirm</button>
-    <p className="nameis">{erro}{newname}</p>
-   </div>
-   
-   ): null}
-
-
-
-      
-          <div className="inv-box">
-            <div className="inv-1"></div>
-            <div className="inv-2"></div>
-            <div className="inv-3"></div>
-          </div>
 
 
         <ul>
