@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './homepage.css';
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import home from './im/home.png';
 import src from './im/search.png';
 import devices from './im/devices.png';
@@ -29,6 +29,17 @@ import r9 from './im/R10.jpg';
 import r10 from './im/R11 .jpg';
 import hrt from './im/heart.png';
 import user from './im/user.png';
+import starfield from './songs/starfield.mp3';
+import villain from './songs/bornvillain.mp3';
+import burn from './songs/burninto.mp3';
+import selfcontrol from './songs/selfcontrol.mp3';
+import masterpuppets from './songs/masterpuppets.mp3';
+import entermatrix from './songs/entermatrix.mp3';
+import alleyes from './songs/alleyes.mp3';
+import becausebonjovi from './songs/becausebonjovi.mp3';
+import thismeanswar from './songs/thismeanswar.mp3';
+import bad from './songs/bad.mp3';
+import someday from './songs/someday.mp3';
 
 
 
@@ -37,6 +48,201 @@ const HomePage=()=> {
   const [cerca, setCerca]=useState(false);
   const [pause, setPause]=useState(false);
   const [mutex, setMute]=useState(false);
+  const [songstar, setsongstar]=useState(false)
+  const [songvilla, setsongvilla]=useState(false)
+  const [songbur, setsongbur]=useState(false)
+  const [songself, setsongself]=useState(false)
+  const [songmaster, setsongmaster]=useState(false)
+  const [songenter, setsongenter]=useState(false)
+  const [songally, setsongally]=useState(false)
+  const [songbejon, setsongbejon]=useState(false)
+  const [songthis, setsongthis]=useState(false)
+  const [songbad, setsongbad]=useState(false)
+  const [songsome, setsongsome]=useState(false)
+  const starf =useRef(null);
+  const villa=useRef(null);
+  const bur = useRef(null);
+  const selfcon =useRef(null);
+  const masterpu =useRef(null);
+  const enterma =useRef(null);
+  const ally =useRef(null);
+  const bejon =useRef(null);
+  const thisme=useRef(null);
+  const badd =useRef(null);
+  const somed =useRef(null);
+  const [songplaying, setsongplaying]=useState('')
+  const [artistplaying, setartistplaying]=useState('')
+  const [imgplaying, setimgplaying]=useState()
+
+  
+
+   const playStar=()=>{
+    if(songstar){
+     starf.current.pause()
+     setsongstar(false)
+     setPause(false)
+   } else {
+    starf.current.play()
+    setsongstar(true)
+    setsongplaying('Starfield Official Theme')
+    setartistplaying('Bethesda Games Studio')
+    setimgplaying(star)
+    setPause(true)
+   }
+  }
+
+  const playBorn=()=>{
+    if(songvilla){
+     villa.current.pause()
+     setsongvilla(false)
+     setPause(false)
+   } else {
+    villa.current.play()
+    setsongvilla(true)
+    setsongplaying('Born Villain')
+    setartistplaying('Marilyn Manson')
+    setimgplaying(r1)
+    setPause(true)
+   }
+  }
+
+  const playBurn=()=>{
+    if(songbur){
+     bur.current.pause()
+     setsongbur(false)
+     setPause(false)
+   } else {
+    bur.current.play()
+    setsongbur(true)
+    setsongplaying('Burn Into The Ground')
+    setartistplaying('Nickelback')
+    setimgplaying(r2)
+    setPause(true)
+   }
+  }
+
+  const playSelf=()=>{
+    if(songself){
+     selfcon.current.pause()
+     setsongself(false)
+     setPause(false)
+   } else {
+    selfcon.current.play()
+    setsongself(true)
+    setsongplaying('Self Control')
+    setartistplaying('Laura Branigan')
+    setimgplaying(r3)
+    setPause(true)
+   }
+  }
+
+  const playMaster=()=>{
+    if(songmaster){
+     masterpu.current.pause()
+     setsongmaster(false)
+     setPause(false)
+   } else {
+    masterpu.current.play()
+    setsongmaster(true)
+    setsongplaying('Master of Puppets')
+    setartistplaying('Metallica')
+    setimgplaying(r4)
+    setPause(true)
+   }
+  }
+
+  const playMatrix=()=>{
+    if(songenter){
+     enterma.current.pause()
+     setsongenter(false)
+     setPause(false)
+   } else {
+    enterma.current.play()
+    setsongenter(true)
+    setsongplaying('Into The Matrix')
+    setartistplaying('Aurora')
+    setimgplaying(r5)
+    setPause(true)
+   }
+  }
+
+  const playEyes=()=>{
+    if(songally){
+     ally.current.pause()
+     setsongally(false)
+     setPause(false)
+   } else {
+    ally.current.play()
+    setsongally(true)
+    setsongplaying('All Eyes On Me')
+    setartistplaying('Eminem')
+    setimgplaying(r6)
+    setPause(true)
+   }
+  }
+
+  const playJovi=()=>{
+    if(songbejon){
+     bejon.current.pause()
+     setsongbejon(false)
+     setPause(false)
+   } else {
+    bejon.current.play()
+    setsongbejon(true)
+    setsongplaying('Because We Can')
+    setartistplaying('Bon Jovi')
+    setimgplaying(r7)
+    setPause(true)
+   }
+  }
+
+  const playWar=()=>{
+    if(songthis){
+     thisme.current.pause()
+     setsongthis(false)
+     setPause(false)
+   } else {
+    thisme.current.play()
+    setsongthis(true)
+    setsongplaying('This Means War')
+    setartistplaying('Nickelback')
+    setimgplaying(r8)
+    setPause(true)
+   }
+  }
+
+  const playBad=()=>{
+    if(songbad){
+     badd.current.pause()
+     setsongbad(false)
+     setPause(false)
+   } else {
+    badd.current.play()
+    setsongbad(true)
+    setsongplaying('Bad')
+    setartistplaying('Michael Jackson')
+    setimgplaying(r9)
+    setPause(true)
+   }
+  }
+
+  const playSome=()=>{
+    if(songsome){
+     somed.current.pause()
+     setsongsome(false)
+     setPause(false)
+   } else {
+    somed.current.play()
+    setsongsome(true)
+    setsongplaying('Someday')
+    setartistplaying('Nickelback')
+    setimgplaying(r10)
+    setPause(true)
+   }
+  }
+   
+  
+
 
   const inMute=()=>{
     if (mutex){
@@ -45,9 +251,6 @@ const HomePage=()=> {
       setMute(true)
     }
   }
-
-
-
 
   const inPause=()=>{
     if (pause){
@@ -245,7 +448,8 @@ visibility:'visible'
          </div>
 
           <div className='backg' style={back}>
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playStar}>
+              <audio src={starfield} ref={starf}></audio>
               <img className='star' src={star}></img>
               <div className='names'>
                <p className='title'style={title}>Starfield Official Theme</p>
@@ -253,7 +457,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playBorn}>
+            <audio src={villain} ref={villa}></audio>
               <img className='star' src={r1}></img>
               <div className='names'>
                <p className='title'style={title}>Born Villain</p>
@@ -261,7 +466,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playBurn}>
+            <audio src={burn} ref={bur}></audio>
               <img className='star' src={r2}></img>
               <div className='names'>
                <p className='title'style={title}>Burn Into The Ground</p>
@@ -269,7 +475,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playSelf}>
+            <audio src={selfcontrol} ref={selfcon}></audio>
               <img className='star' src={r3}></img>
               <div className='names'>
                <p className='title'style={title}>Self Control</p>
@@ -277,7 +484,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playMaster}>
+            <audio src={masterpuppets} ref={masterpu}></audio>
               <img className='star' src={r4}></img>
               <div className='names'>
                <p className='title'style={title}>Metallica</p>
@@ -285,7 +493,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playMatrix}>
+            <audio src={entermatrix} ref={enterma}></audio>
               <img className='star' src={r5}></img>
               <div className='names'>
                <p className='title'style={title}>Into The Matrix</p>
@@ -293,7 +502,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playEyes}>
+              <audio src={alleyes} ref={ally}></audio>
               <img className='star' src={r6}></img>
               <div className='names'>
                <p className='title'style={title}>All Eyes On Me</p>
@@ -301,7 +511,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playJovi}>
+            <audio src={becausebonjovi} ref={bejon}></audio>
               <img className='star' src={r7}></img>
               <div className='names'>
                <p className='title'style={title}>Because We Can</p>
@@ -309,7 +520,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playWar}>
+            <audio src={thismeanswar} ref={thisme}></audio>
               <img className='star' src={r8}></img>
               <div className='names'>
                <p className='title'style={title}>This Means War</p>
@@ -317,7 +529,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playBad}>
+            <audio src={bad} ref={badd}></audio>
               <img className='star' src={r9}></img>
               <div className='names'>
                <p className='title'style={title}>Bad </p>
@@ -325,7 +538,8 @@ visibility:'visible'
               </div> 
             </div>
 
-            <div className='song'style={song}>
+            <div className='song'style={song} onClick={playSome}>
+            <audio src={someday} ref={somed}></audio>
               <img className='star' src={r10}></img>
               <div className='names'>
                <p className='title'style={title}>Best Of Nickelback Volume 1</p>
@@ -349,14 +563,16 @@ visibility:'visible'
                   <p className='text2x'>Liked Songs</p>
                   <img className='play'src={play}></img>
                 </div>
-                <div className='liked'>
+                <div className='liked' onClick={playBorn} >
+                <audio src={villain} ref={villa}></audio>
                   <div className='boxpic'>
                   <img className='star2' src={r1}></img>
                   </div>
                   <p className='text2x'>Marilyn Manson's Playlist</p>
                   <img className='play'src={play}></img>
                 </div>
-                <div className='liked'>
+                <div className='liked' onClick={playSelf} >
+                <audio src={selfcontrol} ref={selfcon}></audio>
                   <div className='boxpic'>
                   <img className='star2' src={r3}></img>
                   </div>
@@ -366,21 +582,24 @@ visibility:'visible'
               </div>
 
               <div className='gridbenv2'style={grid2} >
-              <div className='liked'>
+              <div className='liked' onClick={playMaster}>
+              <audio src={masterpuppets} ref={masterpu}></audio>
                   <div className='boxpic'>
                   <img className='star2' src={r4}></img>
                   </div>
                   <p className='text2x'>Metallica's Playlist</p>
                   <img className='play'src={play}></img>
                 </div>
-                <div className='liked'>
+                <div className='liked'onClick={playEyes} >
+                <audio src={alleyes} ref={ally}></audio>
                   <div className='boxpic'>
                   <img className='star2' src={r6}></img>
                   </div>
                   <p className='text2x'>Eminem's Playlist</p>
                   <img className='play'src={play}></img>
                 </div>
-                <div className='liked'>
+                <div className='liked' onClick={playBad} >
+                <audio src={bad} ref={badd}></audio>
                   <div className='boxpic'>
                   <img className='star2' src={r9}></img>
                   </div>
@@ -398,7 +617,8 @@ visibility:'visible'
                 
                      <p className='show'>Show all</p>
                    
-                  <div className='singer'>
+                  <div className='singer'onClick={playMaster} >
+                  <audio src={masterpuppets} ref={masterpu}></audio>
                    <div className='artpic'>
                   <img className='star3' src={r4}></img>
                   <img className='play2'src={play}></img>
@@ -410,7 +630,8 @@ visibility:'visible'
                   </div>
 
 
-                  <div className='singer'>
+                  <div className='singer'onClick={playStar} >
+                  <audio src={starfield} ref={starf}></audio>
                    <div className='artpic'>
                   <img className='star3' src={star}></img>
                   <img className='play3'src={play}></img>
@@ -421,7 +642,8 @@ visibility:'visible'
                    </div>
                   </div>
 
-                  <div className='singer'>
+                  <div className='singer' onClick={playSome} >
+                  <audio src={someday} ref={somed}></audio>
                    <div className='artpic'>
                   <img className='star3' src={r10}></img>
                   <img className='play4'src={play}></img>
@@ -440,7 +662,8 @@ visibility:'visible'
                 
                      <p className='show2'>Show all</p>
                    
-                  <div className='singer'>
+                  <div className='singer'onClick={playSelf} >
+                  <audio src={selfcontrol} ref={selfcon}></audio>
                    <div className='artpic'>
                   <img className='star3' src={r3}></img>
                   <img className='play2'src={play}></img>
@@ -452,7 +675,8 @@ visibility:'visible'
                   </div>
 
 
-                  <div className='singer'>
+                  <div className='singer' onClick={playEyes}>
+                  <audio src={alleyes} ref={ally}></audio>
                    <div className='artpic'>
                   <img className='star3' src={r6}></img>
                   <img className='play5'src={play}></img>
@@ -463,7 +687,8 @@ visibility:'visible'
                    </div>
                   </div>
 
-                  <div className='singer'>
+                  <div className='singer' onClick={playBad} >
+                  <audio src={bad} ref={badd}></audio>
                    <div className='artpic'>
                   <img className='star3' src={r9}></img>
                   <img className='play6'src={play}></img>
@@ -474,7 +699,8 @@ visibility:'visible'
                    </div>
                   </div>
 
-                  <div className='singer'>
+                  <div className='singer' onClick={playBorn}>
+                  <audio src={villain} ref={villa}></audio>
                    <div className='artpic'>
                   <img className='star3' src={r1}></img>
                   <img className='play7'src={play}></img>
@@ -485,7 +711,8 @@ visibility:'visible'
                    </div>
                   </div>
 
-                  <div className='singer'>
+                  <div className='singer' onClick={playBurn}>
+                  <audio src={burn} ref={bur}></audio>
                    <div className='artpic'>
                   <img className='star3' src={r2}></img>
                   <img className='play8'src={play}></img>
@@ -496,7 +723,8 @@ visibility:'visible'
                    </div>
                   </div>
 
-                  <div className='singer'>
+                  <div className='singer' onClick={playWar}>
+                  <audio src={thismeanswar} ref={thisme}></audio>
                    <div className='artpic'>
                   <img className='star3' src={r8}></img>
                   <img className='play9'src={play}></img>
@@ -520,7 +748,8 @@ visibility:'visible'
                 
                      <p className='show3'>Show all</p>
                    
-                  <div className='singer'>
+                  <div className='singer' onClick={playBorn}>
+                  <audio src={villain} ref={villa}></audio>
                    <div className='artpic'>
                   <img className='star4' src={r1}></img>
                   <img className='play2'src={play}></img>
@@ -532,7 +761,8 @@ visibility:'visible'
                   </div>
 
 
-                  <div className='singer'>
+                  <div className='singer' onClick={playMaster}>
+                  <audio src={masterpuppets} ref={masterpu}></audio>
                    <div className='artpic'>
                   <img className='star4' src={r4}></img>
                   <img className='play5'src={play}></img>
@@ -543,7 +773,8 @@ visibility:'visible'
                    </div>
                   </div>
 
-                  <div className='singer'>
+                  <div className='singer'onClick={playJovi} >
+                  <audio src={becausebonjovi} ref={bejon}></audio>
                    <div className='artpic'>
                   <img className='star4' src={r7}></img>
                   <img className='play6'src={play}></img>
@@ -554,7 +785,8 @@ visibility:'visible'
                    </div>
                   </div>
 
-                  <div className='singer'>
+                  <div className='singer'onClick={playWar} >
+                  <audio src={thismeanswar} ref={thisme}></audio>
                    <div className='artpic'>
                   <img className='star4' src={r10}></img>
                   <img className='play7'src={play}></img>
@@ -592,10 +824,10 @@ visibility:'visible'
 
               <div className='musicbar'>
                <div className='songxx'>
-                 <img className='starxx' src={r8}></img>
+                 <img className='starxx' src={imgplaying}></img>
                <div className='namesx'>
-                 <p className='titlex'>This Means War</p>
-                 <p className='artistx'>Nickelback</p>
+                 <p className='titlex'>{songplaying}</p>
+                 <p className='artistx'>{artistplaying}</p>
                  <img className='heart' src={hrt}></img>
                </div> 
 

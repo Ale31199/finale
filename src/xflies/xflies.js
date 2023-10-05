@@ -31,7 +31,7 @@ const [time, settime]=useState(new Date())
                   <img src={alien} className='xlogo'></img>
                 <h1 className='xtitle'>X-FLIES</h1>
                 <h3 className='xundertitle'>Your First Alien Space Travel</h3>
-                <p className='time'>Ora Locale: {time.toLocaleTimeString()}</p>
+                <p className='xtime'>Ora Locale: {time.toLocaleTimeString()}</p>
                <div className='xmenu'>
                 <Link to='/xflies' className='xhome'>HomePage</Link>
                 <Link to='/xbook' className='xbook'>Biglietti</Link>
