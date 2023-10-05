@@ -29,6 +29,33 @@ function Carousel(){
     const [time, settime]=useState(new Date())
     const [butlink, setbutlink]=useState(<Link to='/marte'>Prenota Ora</Link>)
 
+    const rand = [
+        "Il volo per Marte è in partenza tra 2 ore e 38 minuti",
+        "I nostri voli sono super veloci, prenota ora e scopri nuovi mondi!",
+        "I nostri voli più ricercati sono Marte, Luna e Viaggi Interspaziali.",
+        "Il volo per Terra è in partenza tra 30 minuti",
+        "Il volo per Luna è in partenza tra 47 minuti",
+        "Il volo per Venere è in partenza tra 3 ore e 30 minuti",
+        "Il volo per Giove è in partenza tra 7 ore e 30 minuti",
+        "Il volo per Nettuno è in partenza tra 1 ora e 19 minuti",
+        "Il volo per Plutone è in partenza tra 4 ore e 43 minuti",
+        "Il volo per Mercurio è in partenza tra 1 ora e 55 minuti",
+        "Il volo per Saturno è in partenza tra 2 ore e 30 minuti",
+        "Il volo per Urano è in partenza tra 9 ore e 2 minuti",
+        "Il volo per Viaggi Interspaziali è in partenza tra 10 minuti",
+        "Scopri il nostro shop su Xshop! Acquista oggetti provenienti dallo spazio!"];
+
+    const [randomFrasi, setrandomFrasi]=useState(0)
+
+    useEffect(()=>{
+    const interval=  setInterval(()=>{
+        setrandomFrasi((prevIndex)=> (prevIndex +1) % rand.length)
+     }, 5000)
+     return ()=> clearInterval(interval)
+    },[])
+
+
+
       useEffect(()=>{
         const interval = setInterval(() => {
             settime(new Date())
@@ -157,6 +184,9 @@ const assistPro4=()=>{
                   <img src={alien} className='xlogo'></img>
                 <h1 className='xtitle'>X-FLIES</h1>
                 <h3 className='xundertitle'>Your First Alien Space Travel</h3>
+                <div className='centerrandom'>
+                <p className='randomfrs'>{rand[randomFrasi]}</p>
+                </div>
 
                 <p className='xtime'>Ora Locale: {time.toLocaleTimeString()}</p>
                <div className='xmenu'>

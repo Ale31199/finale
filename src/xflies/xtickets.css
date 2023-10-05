@@ -589,7 +589,42 @@ width: 50%;
     .xtime{
         visibility: visible;
         font-size: 8px;
-        top: 15%;
+        top: 0%;
         left:8%;
     }
+}
+
+.randomfrs{
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    padding-right: 25px;
+    box-shadow: rgb(0, 255, 191) 5px 0px 0px 0px;
+    color: rgb(255, 125, 255);
+    visibility: visible;
+    text-align: justify;
+}
+@media (max-width:1000px) {
+    .randomfrs{
+        top: 13.5%;
+        right: 0%;
+        box-shadow: rgb(0, 255, 191) 0px 0px 0px 0px;
+    }
+}
+@media (max-width:700px) {
+    .randomfrs{
+        top: 15.5%;
+        right: 0%;
+        box-shadow: rgb(0, 255, 191) 0px 0px 0px 0px;
+        font-size: 7px;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    .centerrandom{
+   display: block;
+   justify-content: center;
+    } 
 }

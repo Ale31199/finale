@@ -29,7 +29,6 @@ import visa from './ximg/visa.png';
 import master from './ximg/card.png';
 import american from './ximg/american-express.png';
 import paypal from './ximg/paypal.png';
-import { prettyDOM } from '@testing-library/react';
 
 
 function Carousel(){
@@ -80,12 +79,8 @@ function Carousel(){
     const [namecart, setnamecart]=useState('Nessun prodotto nel carrello...')
     const [imgcart, setimgcart]=useState(alien)
     const [priceca, setpriceca]=useState('--')
+   
 
-    const op1 = 1
-    const op2 = 2
-    const op3 = 3
-    const op4 = 4
-    const op5 = 5
 
     const [onthanks, setonthanks]=useState(false)
 
@@ -726,7 +721,6 @@ function Carousel(){
                   <img src={alien} className='xlogo'></img>
                 <h1 className='xtitle'>X-FLIES</h1>
                 <h3 className='xundertitle'>Your First Alien Space Travel</h3>
-
                 <p className='xtime'>Ora Locale: {time.toLocaleTimeString()}</p>
                <div className='xmenu'>
                 <Link to='/xflies' className='xhome'>HomePage</Link>
