@@ -1,18 +1,18 @@
 import {Outlet, Link} from 'react-router-dom';
-import React from 'react';
+import React, {useState} from 'react';
 import './header.css';
 
 
  const Header=()=>{
 
-  const [homeee, sethomeee]=useState(false)
+  const [homeee, sethomeee]=useState(true)
   const [skillsss, setskillsss]=useState(false)
   const [progettiii, setprogettiii]=useState(false)
 
 
   const onHome=()=>{
     if(homeee){
-      sethomeee(false)
+      sethomeee(true)
     } else {
       sethomeee(true)
       setskillsss(false)
@@ -21,7 +21,7 @@ import './header.css';
   }
   const onSkill=()=>{
     if(skillsss){
-    setskillsss(false)
+    setskillsss(true)
     } else {
       setskillsss(true)
       sethomeee(false)
@@ -30,7 +30,7 @@ import './header.css';
   }
   const onProgetti=()=>{
     if(progettiii){
-      setprogettiii(false)
+      setprogettiii(true)
     } else {
       setprogettiii(true)
       sethomeee(false)
