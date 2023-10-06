@@ -57,7 +57,7 @@ import './header.css';
 
     return(
         <div className='header'>
-            <h1 className='titlew'>HomeCodee</h1>
+            <h1 className='titlew'>HomeCode</h1>
             <h1 className='title1x'>|</h1>
             <div className='menu'>
             <Link to="/" className='homeq'style={homeE} onClick={onHome}>Home</Link>
